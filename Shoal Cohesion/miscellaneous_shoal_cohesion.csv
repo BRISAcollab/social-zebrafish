@@ -1,0 +1,27 @@
+effect_id,study_id,exp_id,outcome_pattern,effect_direction,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,pharmacological_action,n_int,mean_int,sd_int,overall_rob
+1,Serikuly_2021,Serikuly_2021_exp_001,interfish_distance,indirect,Control,4,5.7165,1.324,Arecoline,Muscarinic receptor agonist,4,8.1925,1.512,Low
+2,Volgin_2019,Volgin_2019_exp_001,interfish_distance,indirect,Control,4,3.5785,0.422,Atropine,Muscarinic receptor antagonist,4,4.5805,0.613,Low
+3,Rosa_2020,Rosa_2020_exp_001,interfish_distance,indirect,Control,7,6.942785,1.342894772,Caffeine,Adenosine receptor antagonist,7,5.92,1.058029735,Low
+4,Giacomini_2020,Giacomini_2020_exp_001,interfish_distance,indirect,Control,6,4.9025,1.736688228,Donepezil,Acetylcholinesterase inhibitor,6,4.4195,1.830993583,Low
+5,Giacomini_2020,Giacomini_2020_exp_001,interfish_distance,indirect,Control,6,4.9025,1.736688228,Donepezil,Acetylcholinesterase inhibitor,6,5.4695,2.56951474,Low
+6,Giacomini_2020,Giacomini_2020_exp_001,interfish_distance,indirect,Control,6,4.9025,1.736688228,Donepezil,Acetylcholinesterase inhibitor,6,5.385,1.23699232,Low
+7,Moraes_2021,Moraes_2021_exp_001,interfish_distance,indirect,Control,8,6.062535,1.390723475,Estradiol,Estrogen receptor agonist,8,7.43668,1.518907792,Low
+8,Wu_2022,Wu_2022_exp_001,interfish_distance,indirect,Control,3,11.5555,0.5031607596,Fentanyl,μ-opioid receptor agonist,3,12.021,0.4641896164,High
+9,Wu_2022,Wu_2022_exp_001,interfish_distance,indirect,Control,3,11.5555,0.5031607596,Fentanyl,μ-opioid receptor agonist,3,12.3745,0.4061659144,High
+10,Wu_2022,Wu_2022_exp_001,interfish_distance,indirect,Control,3,11.5555,0.5031607596,Fentanyl,μ-opioid receptor agonist,3,12.9525,0.549060106,High
+11,Maximino_2014,Maximino_2014_exp_001,nearest_neighbor_distance,indirect,Control,10,9.68,4.300697618,IB-MECA,Adenosine A3 receptor agonist,10,11.38,2.593067681,Low
+12,Maximino_2014,Maximino_2014_exp_001,nearest_neighbor_distance,indirect,Control,10,9.68,4.300697618,IB-MECA,Adenosine A3 receptor agonist,10,21.13,4.079338182,Low
+13,Cachat_2013,Cachat_2013_exp_001,interfish_distance,indirect,Control,6,4.42761,0.7190354665,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,4,8.201925,0.55837,Low
+14,Cachat_2013,Cachat_2013_exp_001,interfish_distance,indirect,Control,6,4.42761,0.7190354665,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,4,5.87505,0.41511,Low
+15,Landin_2020,Landin_2020_exp_001,interfish_distance,indirect,Control,5,5.9,0.6708203932,"L-368,899",Oxytocin receptor antagonist,7,6.7,0.5291502622,Low
+16,Green_2012,Green_2012_exp_001,interfish_distance,indirect,Control,8,4.3465,0.1541525219,LSD,5-HT2A/C receptor agonist,8,6.541,0.4243524479,Low
+17,Grossman_2010,Grossman_2010_exp_001,interfish_distance,indirect,Control,2,2.547,0.2609224023,LSD,5-HT2A/C receptor agonist,2,4.121,0.6950859659,Low
+18,Green_2012,Green_2012_exp_001,interfish_distance,indirect,Control,8,4.3465,0.1541525219,MDMA,Monoamine releaser,8,6.5035,0.5888972746,Low
+19,Kyzar_2012,Kyzar_2012_exp_001,interfish_distance,indirect,Control,3,7.4355,0.8876760389,Mescaline,5-HT2A receptor agonist,3,4.818,0.3836492539,High
+20,Stewart_2015,Stewart_2015_exp_001,interfish_distance,indirect,Control,3,2.23,0.3290896534,Nicotine,Nicotinic receptor agonist,3,1.96,0.2424871131,Low
+21,Hamilton_2017,Hamilton_2017_exp_001,interfish_distance,indirect,Control,6,13.9,0.2449489743,Scopolamine,Muscarinic receptor antagonist,6,21,0.2449489743,Low
+22,Volgin_2019,Volgin_2019_exp_001,interfish_distance,indirect,Control,4,3.5785,0.422,Scopolamine,Muscarinic receptor antagonist,4,4.695,0.676,Low
+23,Dhanabal_2024,Dhanabal_2024_exp_001,interfish_distance,indirect,Control,2,33.4935,1.919794911,Valproic acid,Voltage-gated sodium channel blocker,2,42.314,2.294561505,High
+24,Dhanabal_2024,Dhanabal_2024_exp_001,interfish_distance,indirect,Control,2,33.4935,1.919794911,Valproic acid,Voltage-gated sodium channel blocker,2,45.6375,1.159655121,High
+25,Flores_Prieto_2024,Flores_Prieto_2024_exp_001,interfish_distance,indirect,Control,4,4.34,0.159,Valproic acid,Voltage-gated sodium channel blocker,4,5.9385,0.666,Low
+26,Gutiérrez_2019,Gutiérrez_2019_exp_001,interfish_distance,indirect,Control,6,11.9325,1.806498685,Vasopressin,Peptide hormone,6,8.8965,1.107169364,Low

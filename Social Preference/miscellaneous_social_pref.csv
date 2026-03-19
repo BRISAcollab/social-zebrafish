@@ -1,0 +1,67 @@
+effect_id,study_id,exp_id,outcome_pattern,effect_direction,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,pharmacological_action,n_int,mean_int,sd_int,overall_rob
+1,Souza_2024,Souza_2024_exp_001,time_in_social,direct,Control,12,0.8375,0.0925,8-OH-DPAT,5-HT1A receptor agonist,12,0.6015,0.2595,Low
+2,Lutte_2020,Lutte_2020_exp_001,time_in_social,direct,Control,10,265.4205,22.642,AMPCP,Ecto-5′-nucleotidase inhibitor,10,278.561,29.7615,Low
+3,Serikuly_2021,Serikuly_2021_exp_001,time_in_social,direct,Control,15,121.1735,98.91212168,Arecoline,Muscarinic receptor agonist,15,205.022,67.41121163,Low
+4,Barcellos_2020,Barcellos_2020_exp_001,time_in_social,direct,Control,10,30.8915,21.8792658,Aripiprazole,D2/5-HT1A receptor partial agonist,10,35.581,26.45187993,High
+5,Barcellos_2020,Barcellos_2020_exp_001,time_in_social,direct,Control,10,30.8915,21.8792658,Aripiprazole,D2/5-HT1A receptor partial agonist,10,52.812,8.639469428,High
+6,Barcellos_2020,Barcellos_2020_exp_001,time_in_social,direct,Control,10,30.8915,21.8792658,Aripiprazole,D2/5-HT1A receptor partial agonist,10,49.5,8.547670735,High
+7,Bortolotto_2015,Bortolotto_2015_exp_001,time_in_social,direct,Control,6,9.484,1.23944181,Caffeine,Adenosine receptor antagonist,6,9.945,0.2718933614,Low
+8,Freddo_2021,Freddo_2021_exp_001,time_in_social,direct,Control,12,36.9715,19.57563823,Caffeine,Adenosine receptor antagonist,12,24.222,6.354894413,Low
+9,Ladu_2015,Ladu_2015_exp_001,time_in_social,direct,Control,10,38.49384,28.70265035,Caffeine,Adenosine receptor antagonist,9,49.449145,24.69888,Low
+10,Ladu_2015,Ladu_2015_exp_001,time_in_social,direct,Control,10,38.49384,28.70265035,Caffeine,Adenosine receptor antagonist,10,52.517035,29.44848935,Low
+11,Ladu_2015,Ladu_2015_exp_001,time_in_social,direct,Control,10,38.49384,28.70265035,Caffeine,Adenosine receptor antagonist,10,40.82647,37.11269617,Low
+12,Santos_2023,Santos_2023_exp_001,time_in_social,direct,Control,12,239.5615,52.83967399,Caffeine,Adenosine receptor antagonist,12,212.9115,46.28212963,Low
+13,Santos_2023,Santos_2023_exp_001,time_in_social,direct,Control,12,239.5615,52.83967399,Caffeine,Adenosine receptor antagonist,12,203.945,59.70898749,Low
+14,Santos_2023,Santos_2023_exp_001,time_in_social,direct,Control,12,239.5615,52.83967399,Caffeine,Adenosine receptor antagonist,12,239.5615,70.16537821,Low
+15,Dhakshinamoorthy_2024,Dhakshinamoorthy_2024_exp_001,time_in_social,direct,Control,10,0.00131,0.000075,Carbamazepine,Sodium channel blocker,10,0.0008,0.00008,High
+16,Zimmermann_2016,Zimmermann_2016_exp_002,time_in_social,direct,Control,12,285.142,19.92204839,Carbetocin,Oxytocin receptor agonist,12,262.375,41.94853851,Low
+17,Lindeyer_2015,Lindeyer_2015_exp_001,time_in_social,direct,Control,25,190.1795,108.4325,"d(CH 2) 5[Tyr(Me) 2,Dab 5]AVP",Vasotocin receptor antagonist,25,111.561,74.5325,Low
+18,Lindeyer_2015,Lindeyer_2015_exp_001,time_in_social,direct,Control,25,190.1795,108.4325,"desGly-NH 2,d(CH 2) 5[ d-Tyr 2,Thr 4]OVT",Isotocin receptor antagonist,25,183.5595,124.6875,Low
+19,Bortolotto_2015,Bortolotto_2015_exp_004,time_in_social,direct,Control,6,9.1105,1.243116044,Dipyridamole,Nucleoside transporter inhibitor,6,8.5965,3.42438666,Low
+20,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_social,direct,Control,6,8.9435,1.734238738,DPCPX ,Adenosine A1 receptor antagonist,6,8.086,2.955309375,Low
+21,Bortolotto_2015,Bortolotto_2015_exp_003,time_in_social,direct,Control,6,9.555,1.092472425,EHNA,Adenosine deaminase inhibitor,6,9.948,0.3025119832,Low
+22,Lutte_2020,Lutte_2020_exp_001,time_in_social,direct,Control,10,265.4205,22.642,EHNA,Adenosine deaminase inhibitor,10,272.3055,27.787,Low
+23,Wu_2022,Wu_2022_exp_001,time_in_social,direct,Control,16,245.837,43.618,Fentanyl,μ-opioid receptor agonist,16,247.1105,43.138,High
+24,Wu_2022,Wu_2022_exp_001,time_in_social,direct,Control,16,245.837,43.618,Fentanyl,μ-opioid receptor agonist,16,199.2165,67.252,High
+25,Wu_2022,Wu_2022_exp_001,time_in_social,direct,Control,16,245.837,43.618,Fentanyl,μ-opioid receptor agonist,16,198.759,56.112,High
+26,Oliveri_2019,Oliveri_2019_exp_001,distance_to_social,indirect,Control,16,13.048,6.366466347,Haloperidol,D2 receptor antagonist,16,12.33,5.179498045,Low
+27,Oliveri_2019,Oliveri_2019_exp_001,distance_to_social,indirect,Control,16,13.048,6.366466347,Haloperidol,D2 receptor antagonist,16,15.9695,6.51753504,Low
+28,Seibt_2011,Seibt_2011_exp_001,time_in_social,direct,Control,11,8.606,1.842902059,Haloperidol,D2 receptor antagonist,11,7.2365,2.471636502,Low
+29,Cachat_2013,Cachat_2013_exp_001,time_in_social,direct,Control,15,119.674045,162.9312002,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,15,177.055605,121.0380301,Low
+30,Cachat_2013,Cachat_2013_exp_001,time_in_social,direct,Control,15,119.674045,162.9312002,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,15,154.187495,125.3743772,Low
+31,Lindeyer_2015,Lindeyer_2015_exp_001,time_in_social,direct,Control,25,190.1795,108.4325,Isotocin,Oxytocin homolog in fish,25,154.577,123.7025,Low
+32,Landin_2020,Landin_2020_exp_001,time_in_social,direct,Control,21,45.9,10.5399241,"L-368,899 ",Oxytocin receptor antagonist,20,34.5,10.73312629,Low
+33,Wilson_2024,Wilson_2024_exp_001,time_in_social_delta,direct,Control,9,39.4015,6.6825,"L-368,899 ",Oxytocin receptor antagonist,9,34.28,7.683,Low
+34,Zimmermann_2016,Zimmermann_2016_exp_003,time_in_social,direct,Control,14,238.356,34.25487338,"L-368,899 ",Oxytocin receptor antagonist,14,253.873,34.25487338,Low
+35,Grossman_2010,Grossman_2010_exp_001,time_in_social,direct,Control,10,168.152,90.79531618,LSD,5-HT2A/C receptor agonist,10,178.7205,97.26217399,Low
+36,Moura_2023,Moura_2023_exp_001,time_in_social,direct,Control,10,257.314,47.716,MK-212,5-HT2A/C receptor agonist,10,374.8935,66.423,Low
+37,Borrego-Soto_2022,Borrego-Soto_2022_exp_001,time_in_social,direct,Control,22,59,36.58524293,Nicotine,Nicotinic receptor agonist,22,69,26.26632826,High
+38,Borrego-Soto_2022,Borrego-Soto_2022_exp_001,time_in_social,direct,Control,22,59,36.58524293,Nicotine,Nicotinic receptor agonist,30,47,25.7429602,High
+39,Borrego-Soto_2022,Borrego-Soto_2022_exp_001,time_in_social,direct,Control,22,59,36.58524293,Nicotine,Nicotinic receptor agonist,23,36,22.06082501,High
+40,Crosby_2015,Crosby_2015_exp_001,distance_to_social,indirect,Control,30,3.733,8.935933779,Nicotine,Nicotinic receptor agonist,30,8.699,13.02926201,Low
+41,Crosby_2015,Crosby_2015_exp_001,distance_to_social,indirect,Control,30,3.733,8.935933779,Nicotine,Nicotinic receptor agonist,30,3.671,6.277019715,Low
+42,Seibt_2011,Seibt_2011_exp_001,time_in_social,direct,Control,11,8.606,1.842902059,Olanzapine,D2/5-HT2A receptor antagonist,11,9.5115,0.6512511036,Low
+43,Vecchia_2019,Vecchia_2019_exp_001,time_in_social,direct,Control,9,79.942755,33.54996,Oxytocin,Peptide hormone and neuropeptide,9,74.3841,42.262305,Low
+44,Zimmermann_2016,Zimmermann_2016_exp_001,time_in_social,direct,Control,16,248.669,26.232,Oxytocin,Peptide hormone and neuropeptide,16,262.7845,41.132,Low
+45,Xin_2022,Xin_2022_exp_001,time_in_social,direct,Control,3,7.35531,0.85375,Prednisolone,Glucocorticoid receptor agonist,3,2.69969,0.251685,Low
+46,Martins_2022,Martins_2022_exp_001,time_in_social,direct,Control,18,264.6455,59.21555218,Reserpine,VMAT2 transporter inhibitor,18,263.009,55.54616463,Low
+47,Vecchia_2019,Vecchia_2019_exp_001,time_in_social,direct,Control,9,79.942755,33.54996,Risperidone,D2/5-HT2A receptor antagonist,9,73.07731,24.63204,Low
+48,Moura_2023,Moura_2023_exp_001,time_in_social,direct,Control,10,257.314,47.716,RS102221,5-HT2C receptor antagonist,9,156.1295,103.9195,Low
+49,Oliveri_2019,Oliveri_2019_exp_001,distance_to_social,indirect,Control,16,13.048,6.366466347,SCH-23390,D1 receptor antagonist,16,8.4715,4.210740077,Low
+50,Oliveri_2019,Oliveri_2019_exp_001,distance_to_social,indirect,Control,16,13.048,6.366466347,SCH-23390,D1 receptor antagonist,16,13.5765,7.155380633,Low
+51,Scerbina_2012,Scerbina_2012_exp_001,distance_to_social_delta,indirect,Control,20,-14.4955,7.844126465,SCH-23390,D1 receptor antagonist,20,-10.9545,8.986757202,Low
+52,Scerbina_2012,Scerbina_2012_exp_001,distance_to_social_delta,indirect,Control,20,-14.4955,7.844126465,SCH-23390,D1 receptor antagonist,20,-2.8305,11.02157906,Low
+53,Scerbina_2012,Scerbina_2012_exp_002,distance_to_social_delta,indirect,Control,20,-10.0765,9.724659634,SCH-23390,D1 receptor antagonist,20,-13.592,9.709007158,Low
+54,Scerbina_2012,Scerbina_2012_exp_002,distance_to_social_delta,indirect,Control,20,-10.0765,9.724659634,SCH-23390,D1 receptor antagonist,20,-7.578,10.50281129,Low
+55,Scerbina_2022,Scerbina_2022_exp_001,distance_to_social_delta,indirect,Control,20,-14.576,7.502008065,SCH-23390,D1 receptor antagonist,20,-10.976,9.152226232,Low
+56,Scerbina_2022,Scerbina_2022_exp_001,distance_to_social_delta,indirect,Control,20,-14.576,7.502008065,SCH-23390,D1 receptor antagonist,20,-2.766,10.84940183,Low
+57,Scerbina_2022,Scerbina_2022_exp_002,distance_to_social_delta,indirect,Control,20,-9.9745,9.92814182,SCH-23390,D1 receptor antagonist,20,-13.555,9.53012172,Low
+58,Scerbina_2022,Scerbina_2022_exp_002,distance_to_social_delta,indirect,Control,20,-9.9745,9.92814182,SCH-23390,D1 receptor antagonist,20,-7.549,10.36864721,Low
+59,Bortolotto_2015,Bortolotto_2015_exp_001,time_in_social,direct,Control,6,9.484,1.23944181,Scopolamine,Muscarinic receptor antagonist,6,7.7305,4.107794299,Low
+60,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_social,direct,Control,6,8.9435,1.734238738,Scopolamine,Muscarinic receptor antagonist,6,8.867,1.485615529,Low
+61,Bortolotto_2015,Bortolotto_2015_exp_003,time_in_social,direct,Control,6,9.555,1.092472425,Scopolamine,Muscarinic receptor antagonist,6,8.368,3.077783862,Low
+62,Bortolotto_2015,Bortolotto_2015_exp_004,time_in_social,direct,Control,6,9.1105,1.243116044,Scopolamine,Muscarinic receptor antagonist,6,9.104,1.18922727,Low
+63,Seibt_2011,Seibt_2011_exp_001,time_in_social,direct,Control,11,8.606,1.842902059,Sulpiride,D2/D3 receptor antagonist,11,9.0765,1.302502207,Low
+64,Lindeyer_2015,Lindeyer_2015_exp_001,time_in_social,direct,Control,25,190.1795,108.4325,Vasotocin,Vasopressin homolog in non-mammalian vertebrates,25,257.0635,203.1875,Low
+65,Barba-escobedo_2012,Barba-escobedo_2012_exp_001,time_in_social,direct,Control,9,175.5865,138.7605,"WIN 55,212-2",Cannabinoid receptor agonist,7,256.0695,171.2713882,Low
+66,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_social,direct,Control,6,8.9435,1.734238738,ZM 241385,Adenosine A2A receptor antagonist,6,8.456,2.433568059,Low

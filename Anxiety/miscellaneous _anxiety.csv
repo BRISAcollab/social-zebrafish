@@ -1,0 +1,77 @@
+effect_id,study_id,exp_id,outcome_pattern,effect_direction,test,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,pharmacological_action,n_int,mean_int,sd_int
+1,Souza_2024,Souza_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,31.7665,86.438,8 OH-DPAT,5-HT1A receptor agonist,12,249.8995,109.1355
+2,Souza_2024,Souza_2024_exp_002,time_in_light,indirect,Light/dark,Control,12,311.494,285.6675,8 OH-DPAT,5-HT1A receptor agonist,12,83.2275,162.75
+3,Lutte_2020,Lutte_2020_exp_001,time_in_upper,indirect,Novel tank,Control,10,104.202,12.2975,AMPCP,Ecto-5′-nucleotidase inhibitor,10,130.879,20.11
+4,Serikuly_2021,Serikuly_2021_exp_001,time_in_light,indirect,Light/dark,Control,12,117.254,59.75299851,Arecoline,Muscarinic receptor agonist,12,165.3115,54.87108209
+5,Serikuly_2021,Serikuly_2021_exp_002,time_in_upper,indirect,Novel tank,Control,15,79.686,104.1270938,Arecoline,Muscarinic receptor agonist,15,293.189,23.04812389
+6,Barcellos_2020,Barcellos_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,46.0605,58.76328775,Aripiprazole,D2/5-HT1A receptor partial agonist,12,18.964,16.10460841
+7,Barcellos_2020,Barcellos_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,46.0605,58.76328775,Aripiprazole,D2/5-HT1A receptor partial agonist,12,33.958,63.61303001
+8,Barcellos_2020,Barcellos_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,46.0605,58.76328775,Aripiprazole,D2/5-HT1A receptor partial agonist,12,17.814,19.51155235
+9,Volgin_2019,Volgin_2019_exp_001,time_in_upper,indirect,Novel tank,Control,14,157,58.09475019,Atropine,Muscarinic receptor antagonist,14,165,42.60281681
+10,Volgin_2019,Volgin_2019_exp_003,time_in_light,indirect,Light/dark,Control,10,152,34.78505426,Atropine,Muscarinic receptor antagonist,10,163,63.2455532
+11,Bortolotto_2015,Bortolotto_2015_exp_001,time_in_upper,indirect,Novel tank,Control,12,86.9205,86.84675954,Caffeine,Adenosine receptor antagonist,12,114.4045,34.8575225
+12,Freddo_2021,Freddo_2021_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.7925,39.6778199,Caffeine,Adenosine receptor antagonist,12,71.1535,85.57543425
+13,Santos_2023,Santos_2023_exp_001,entries_in_upper,indirect,Novel tank,Control,12,11.145,13.13067717,Caffeine,Adenosine receptor antagonist,12,4.334,8.630809174
+14,Santos_2023,Santos_2023_exp_001,entries_in_upper,indirect,Novel tank,Control,12,11.145,13.13067717,Caffeine,Adenosine receptor antagonist,12,2.718,5.649949734
+15,Santos_2023,Santos_2023_exp_001,entries_in_upper,indirect,Novel tank,Control,12,11.145,13.13067717,Caffeine,Adenosine receptor antagonist,12,1.51,2.197972475
+16,Dhakshinamoorthy_2024,Dhakshinamoorthy_2024_exp_001,time_in_upper,indirect,Novel tank,Control,10,0.00102657895,0.00005026315,Carbamazepine,Sodium channel blocker,10,0.0009486842,0.0000481579
+17,Dhakshinamoorthy_2024,Dhakshinamoorthy_2024_exp_002,time_in_light,indirect,Light/dark,Control,10,0.00104583335,0.0002295833,Carbamazepine,Sodium channel blocker,10,0.00221208335,0.0002275
+18,Johnson_2023,Johnson_2023_exp_001,time_in_upper,indirect,Novel tank,Control,17,0.08,0.1401855913,Chlordiazepoxide,Benzodiazepine receptor agonist,19,0.21285,0.3232123567
+19,Johnson_2023,Johnson_2023_exp_001,time_in_upper,indirect,Novel tank,Control,17,0.08,0.1401855913,Chlordiazepoxide,Benzodiazepine receptor agonist,16,0.33,0.2
+20,Johnson_2023,Johnson_2023_exp_001,time_in_upper,indirect,Novel tank,Control,17,0.08,0.1401855913,Chlordiazepoxide,Benzodiazepine receptor agonist,18,0.37,0.1272792206
+21,Johnson_2023,Johnson_2023_exp_002,time_in_dark,direct,Light/dark,Control,19,153.56765,94.50833922,Chlordiazepoxide,Benzodiazepine receptor agonist,19,152.2723,111.5801849
+22,Johnson_2023,Johnson_2023_exp_002,time_in_dark,direct,Light/dark,Control,19,153.56765,94.50833922,Chlordiazepoxide,Benzodiazepine receptor agonist,19,138.3091,84.14287754
+23,Johnson_2023,Johnson_2023_exp_002,time_in_dark,direct,Light/dark,Control,19,153.56765,94.50833922,Chlordiazepoxide,Benzodiazepine receptor agonist,19,138.3976,79.8053372
+24,Gusso_2021,Gusso_2021_exp_001,time_in_upper,indirect,Novel tank,Control,17,89.4615,73.46137293,Clonazepam,Benzodiazepine receptor agonist,13,169.009,110.0666638
+25,Bortolotto_2015,Bortolotto_2015_exp_004,time_in_upper,indirect,Novel tank,Control,12,91.264,55.09480414,Dipyridamole,Nucleoside transporter inhibitor,12,94.7825,39.67262375
+26,Giacomini_2020,Giacomini_2020_exp_001,time_in_upper,indirect,Novel tank,Control,15,54.242,42.58732487,Donepezil,Acetylcholinesterase inhibitor,15,56.377,71.64631892
+27,Giacomini_2020,Giacomini_2020_exp_001,time_in_upper,indirect,Novel tank,Control,15,54.242,42.58732487,Donepezil,Acetylcholinesterase inhibitor,15,101.5155,132.2352704
+28,Giacomini_2020,Giacomini_2020_exp_001,time_in_upper,indirect,Novel tank,Control,15,54.242,42.58732487,Donepezil,Acetylcholinesterase inhibitor,15,100.535,140.7655162
+29,Giacomini_2020,Giacomini_2020_exp_002,time_in_light,indirect,Light/dark,Control,12,185.019,47.03210763,Donepezil,Acetylcholinesterase inhibitor,12,205.0815,58.85335439
+30,Giacomini_2020,Giacomini_2020_exp_002,time_in_light,indirect,Light/dark,Control,12,185.019,47.03210763,Donepezil,Acetylcholinesterase inhibitor,12,204.053,69.54183992
+31,Giacomini_2020,Giacomini_2020_exp_002,time_in_light,indirect,Light/dark,Control,12,185.019,47.03210763,Donepezil,Acetylcholinesterase inhibitor,12,122.543,45.04890945
+32,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_upper,indirect,Novel tank,Control,12,91.388,75.03417303,DPCPX,Adenosine A1 receptor antagonist,12,77.6245,59.52365805
+33,Joseph_2021,Joseph_2021_exp_001,time_in_upper,indirect,Novel tank,Control,8,71.6985,33.09949093,Duloxetine,Serotonin–norepinephrine reuptake inhibitor,8,62.032,36.7800989
+34,Lutte_2020,Lutte_2020_exp_001,time_in_upper,indirect,Novel tank,Control,10,104.202,12.2975,EHNA,Adenosine deaminase inhibitor,10,117.5765,6.32
+35,Bortolotto_2015,Bortolotto_2015_exp_003,time_in_upper,indirect,Novel tank,Control,12,81.391,49.62325564,EHNA,Adenosine deaminase inhibitor,12,85.4475,30.96906844
+36,Wu_2022,Wu_2022_exp_001,time_in_upper,indirect,Novel tank,Control,16,10.668,31.562,Fentanyl,μ-opioid receptor agonist,16,30.798,41.434
+37,Wu_2022,Wu_2022_exp_001,time_in_upper,indirect,Novel tank,Control,16,10.668,31.562,Fentanyl,μ-opioid receptor agonist,16,28.1465,35.512
+38,Wu_2022,Wu_2022_exp_001,time_in_upper,indirect,Novel tank,Control,16,10.668,31.562,Fentanyl,μ-opioid receptor agonist,16,53.58,55.738
+39,Adel_2024,Adel_2024_exp_001,time_in_center,indirect,Open tank,Control,10,9.173,27.1615,Fluoxetine,Selective serotonin reuptake inhibitor,10,5.874,16.0525
+40,Oliveri_2019,Oliveri_2019_exp_001,height_in_tank,indirect,Novel tank,Control,16,1.321,0.5299393833,Haloperidol,D2 receptor antagonist,16,1.666,1.496299435
+41,Oliveri_2019,Oliveri_2019_exp_001,height_in_tank,indirect,Novel tank,Control,16,1.321,0.5299393833,Haloperidol,D2 receptor antagonist,16,1.2045,0.7841184541
+42,Maximino_2014,Maximino_2014_exp_001,time_in_upper,indirect,Novel tank,Control,9,18.14,21.21,IB-MECA,Adenosine A3 receptor agonist,11,37.04,72.63408291
+43,Maximino_2014,Maximino_2014_exp_001,time_in_upper,indirect,Novel tank,Control,9,18.14,21.21,IB-MECA,Adenosine A3 receptor agonist,12,208.5,125.4004785
+44,Maximino_2014,Maximino_2014_exp_002,time_in_light,indirect,Light/dark,Control,9,19.9,3.45,IB-MECA,Adenosine A3 receptor agonist,10,51.84,6.261309767
+45,Maximino_2014,Maximino_2014_exp_002,time_in_light,indirect,Light/dark,Control,9,19.9,3.45,IB-MECA,Adenosine A3 receptor agonist,9,42.1,6.3
+46,Cachat_2013,Cachat_2013_exp_001,time_in_upper,indirect,Novel tank,Control,29,15.8541,27.86247476,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,29,20.813475,48.22074767
+47,Cachat_2013,Cachat_2013_exp_001,time_in_upper,indirect,Novel tank,Control,29,15.8541,27.86247476,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,29,25.54586,66.60530167
+48,Cachat_2013,Cachat_2013_exp_002,time_in_light,indirect,Light/dark,Control,13,98.675235,152.1268436,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,13,96.22546,143.50305
+49,Cachat_2013,Cachat_2013_exp_002,time_in_light,indirect,Light/dark,Control,13,98.675235,152.1268436,Ibogaine,NMDA receptor antagonist; 5-HT reuptake inhibitor,13,266.396515,103.6981065
+50,Landin_2020,Landin_2020_exp_001,time_in_upper,indirect,Novel tank,Control,20,7,10.73312629,"L-368,899",Oxytocin receptor antagonist,20,8.8,10.73312629
+51,Grossman_2010,Grossman_2010_exp_001,time_in_upper,indirect,Novel tank,Control,10,2.316,9.198921839,LSD,5-HT2A/C receptor agonist,10,205.734,96.75235811
+52,Grossman_2010,Grossman_2010_exp_002,time_in_light,indirect,Light/dark,Control,12,39.6365,70.10475644,LSD,5-HT2A/C receptor agonist,12,131.047,115.567626
+53,Grossman_2010,Grossman_2010_exp_003,time_in_center,indirect,Open tank,Control,15,89.03,88.94499904,LSD,5-HT2A/C receptor agonist,15,70.669,70.75746924
+54,Kyzar_2012,Kyzar_2012_exp_001,time_in_upper,indirect,Novel tank,Control,20,10.644,18.80085955,Mescaline,5-HT2A receptor agonist,20,71.9125,75.78928803
+55,Crosby_2015,Crosby_2015_exp_001,height_in_tank,indirect,Novel tank,Control,30,1.585,0.6851368476,Nicotine,Nicotinic receptor agonist,30,1.462,0.443152344
+56,Crosby_2015,Crosby_2015_exp_001,height_in_tank,indirect,Novel tank,Control,30,1.585,0.6851368476,Nicotine,Nicotinic receptor agonist,30,1.4995,0.4897999592
+57,Stewart_2015,Stewart_2015_exp_001,time_in_upper,indirect,Novel tank,Control,12,28.407,42.7972434,Nicotine,Nicotinic receptor agonist,11,4.3535,6.553650586
+58,Martins_2022,Martins_2022_exp_001,time_in_bottom,direct,Novel tank,Control,20,42.25975,98.43081794,Reserpine,VMAT2 transporter inhibitor,18,241.03405,96.08223511
+59,Oliveri_2019,Oliveri_2019_exp_001,height_in_tank,indirect,Novel tank,Control,16,1.321,0.5299393833,SCH-23390,D1 receptor antagonist,16,1.1205,0.7673330437
+60,Oliveri_2019,Oliveri_2019_exp_001,height_in_tank,indirect,Novel tank,Control,16,1.321,0.5299393833,SCH-23390,D1 receptor antagonist,16,1.2075,0.6570289187
+61,Bortolotto_2015,Bortolotto_2015_exp_001,time_in_upper,indirect,Novel tank,Control,12,86.9205,86.84675954,Scopolamine,Muscarinic receptor antagonist,12,93.084,75.43774087
+62,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_upper,indirect,Novel tank,Control,12,91.388,75.03417303,Scopolamine,Muscarinic receptor antagonist,12,77.989,66.09852292
+63,Bortolotto_2015,Bortolotto_2015_exp_003,time_in_upper,indirect,Novel tank,Control,12,81.391,49.62325564,Scopolamine,Muscarinic receptor antagonist,12,72.5225,49.25086471
+64,Bortolotto_2015,Bortolotto_2015_exp_004,time_in_upper,indirect,Novel tank,Control,12,91.264,55.09480414,Scopolamine,Muscarinic receptor antagonist,12,92.018,52.73228684
+65,Hamilton_2017,Hamilton_2017_exp_001,time_in_center,indirect,Open tank,Control,18,8.468,6.762769255,Scopolamine,Muscarinic receptor antagonist,19,20.4,14.17513936
+66,Hamilton_2017,Hamilton_2017_exp_002,time_in_upper,indirect,Novel tank,Control,10,55.8,43.63943171,Scopolamine,Muscarinic receptor antagonist,13,144.9,94.82599854
+67,Volgin_2019,Volgin_2019_exp_002,time_in_upper,indirect,Novel tank,Control,14,157,23.23790008,Scopolamine,Muscarinic receptor antagonist,14,146,50.3487835
+68,Volgin_2019,Volgin_2019_exp_003,time_in_light,indirect,Light/dark,Control,10,152,34.78505426,Scopolamine,Muscarinic receptor antagonist,10,195,75.89466384
+69,Bailey_2016,Bailey_2016_exp_001,height_in_tank,indirect,Novel tank,Control,28,1.4105,1.145512986,Valproic acid,Voltage-gated sodium channel blocker,28,1.6505,1.213395237
+70,Bailey_2016,Bailey_2016_exp_001,height_in_tank,indirect,Novel tank,Control,28,1.4105,1.145512986,Valproic acid,Voltage-gated sodium channel blocker,28,1.5775,1.125713996
+71,Bailey_2016,Bailey_2016_exp_001,height_in_tank,indirect,Novel tank,Control,28,1.4105,1.145512986,Valproic acid,Voltage-gated sodium channel blocker,28,2.0215,1.139856131
+72,Dhanabal_2024,Dhanabal_2024_exp_001,time_in_bottom,direct,Novel tank,Control,20,199.881,18.5884331,Valproic acid,Voltage-gated sodium channel blocker,20,195.842,9.565898808
+73,Dhanabal_2024,Dhanabal_2024_exp_001,time_in_bottom,direct,Novel tank,Control,20,199.881,18.5884331,Valproic acid,Voltage-gated sodium channel blocker,20,184.679,11.1445628
+74,Joseph_2021,Joseph_2021_exp_001,time_in_upper,indirect,Novel tank,Control,8,71.6985,33.09949093,Valproic acid,Voltage-gated sodium channel blocker,8,6.515,9.988632218
+75,Zimmermann_2015,Zimmermann_2015_exp_001,time_in_bottom,direct,Novel tank,Control,32,248.9,44.68914857,Valproic acid,Voltage-gated sodium channel blocker,32,268.5,22.627417
+76,Bortolotto_2015,Bortolotto_2015_exp_002,time_in_upper,indirect,Novel tank,Control,12,91.388,75.03417303,ZM 241385,Adenosine A2A receptor antagonist,12,69.474,46.80001282

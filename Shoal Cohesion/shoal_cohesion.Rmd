@@ -1,0 +1,649 @@
+---
+title: "Shoal Cohesion: Multilevel Meta-analysis"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    number_sections: false
+    theme: flatly
+date: "2025-12-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  results = "asis",
+  fig.align = "center"
+)
+options(width = 120)
+```
+
+# Purpose and scope
+
+This report presents a multilevel meta-analysis of shoal cohesion across experimental categories.
+For each category, effects are synthesised using a multilevel REML model with random effects at the study and experiment levels.
+
+---
+
+```{r full-analysis-pipeline, include=FALSE}
+############################
+# PACKAGES
+############################
+
+pkgs <- c("tidyverse","metafor","clubSandwich","orchaRd","patchwork")
+
+for(p in pkgs){
+  if(!requireNamespace(p, quietly = TRUE)){
+    install.packages(p, dependencies = TRUE)
+  }
+}
+invisible(lapply(pkgs, library, character.only = TRUE))
+
+############################
+# 1) PATHS & PARAMETERS
+############################
+
+DATA_PATH <- "all_shoal_cohesion.csv"
+OUT_DIR   <- "outputs_shoal_cohesion"
+
+dir.create(OUT_DIR, showWarnings = FALSE)
+dir.create(file.path(OUT_DIR,"figs_png"), showWarnings = FALSE)
+dir.create(file.path(OUT_DIR,"tables"), showWarnings = FALSE)
+
+RHO0     <- 0.5
+RHO_GRID <- c(0,0.2,0.4,0.5,0.6,0.8)
+
+COL_POINT  <- "#CAB2D6"
+COL_LINE   <- "#9C85BF"
+COL_BORDER <- "black"
+
+############################
+# READ DATA
+############################
+
+dat_raw <- read_csv(DATA_PATH, show_col_types = FALSE)
+categories <- unique(dat_raw$category)
+
+############################
+# FUNCTIONS
+############################
+
+prepare_category <- function(dat, cat){
+
+  d <- dat %>%
+    filter(category == cat) %>%
+    mutate(
+      sd_int  = abs(sd_int),
+      sd_ctrl = abs(sd_ctrl)
+    )
+
+  es <- escalc(
+    measure = "SMD",
+    m1i = mean_int, sd1i = sd_int, n1i = n_int,
+    m2i = mean_ctrl, sd2i = sd_ctrl, n2i = n_ctrl,
+    data = d
+  )
+
+  if("effect_direction" %in% names(d)){
+    flip <- ifelse(tolower(d$effect_direction) == "indirect", -1, 1)
+    es$yi <- es$yi * flip
+  }
+
+  es %>%
+    mutate(
+      study_id = factor(study_id),
+      exp_id   = factor(exp_id),
+      effect_id = factor(effect_id),
+      SE = sqrt(vi),
+      SE_eff = sqrt(1/n_int + 1/n_ctrl),
+      study_label = gsub("_"," ", study_id),
+      intervention = name_int
+    )
+}
+
+make_V <- function(es, rho){
+  vcalc(
+    vi      = es$vi,
+    cluster = es$exp_id,
+    obs     = es$effect_id,
+    rho     = rho
+  )
+}
+
+############################
+# STORAGE OBJECTS
+############################
+
+orchard_list   <- list()
+rho_sensitivity <- list()
+
+############################
+# MAIN LOOP
+############################
+
+for(cat in categories){
+
+  message("Running category: ", cat)
+
+  es <- prepare_category(dat_raw, cat)
+  V  <- make_V(es, RHO0)
+
+  ############################
+  # MAIN MULTILEVEL MODEL
+  ############################
+
+  mod <- rma.mv(
+    yi = yi,
+    V  = V,
+    random = ~ 1 | study_id/exp_id,
+    method = "REML",
+    data = es
+  )
+
+  mod_r <- robust(mod, cluster = es$study_id)
+
+  i2_res <- i2_ml(mod_r)
+
+############################
+# MAIN RESULTS TABLE
+############################
+
+  main_tbl <- tibble(
+    category = cat,
+    estimate = as.numeric(coef(mod_r)),
+    ci_lb = mod_r$ci.lb,
+    ci_ub = mod_r$ci.ub,
+    p_value = summary(mod_r)$pval,
+    sigma2_between = mod_r$sigma2[1],
+    sigma2_within  = mod_r$sigma2[2],
+    k = mod_r$k,
+    n_studies = n_distinct(es$study_id)
+  )
+
+  write_csv(main_tbl,
+            file.path(OUT_DIR,"tables",paste0("main_meta_",cat,".csv")))
+
+  i2_tbl <- tibble(
+    category = cat,
+    I2_total   = as.numeric(i2_res["I2_Total"]),
+    I2_between = as.numeric(i2_res["I2_study_id"]),
+    I2_within  = as.numeric(i2_res["I2_study_id/exp_id"])
+  )
+
+  write_csv(
+    i2_tbl,
+    file.path(OUT_DIR, "tables", paste0("i2_multilevel_", cat, ".csv"))
+  )
+
+############################
+# FOREST PLOT
+############################
+
+  n_es <- mod_r$k
+fig_height <- max(4000, n_es * 100)
+
+png(
+  filename = file.path(OUT_DIR, "figs_png", paste0("forest_", cat, ".png")),
+  width = 6000,
+  height = fig_height,
+  res = 400
+)
+
+  forest(
+    mod_r,
+    slab = es$study_label,
+    ilab = cbind(es$intervention),
+    ilab.xpos = c(-10),
+    xlim = c(-22, 13),
+    alim = c(-6, 6),
+    refline = 0,
+    pch = 22,
+    bg = COL_POINT,
+    col = COL_LINE,
+    border = COL_BORDER,
+    colout = "black",
+    addpred = TRUE,
+    predstyle = "dist"
+  )
+
+  text(-10, mod_r$k + 2, "Intervention", font = 2)
+  dev.off()
+
+############################
+# ORCHARD PLOT
+############################
+
+  op <- orchard_plot(
+    mod_r,
+    group = "study_id",
+    xlab = "Standardised Mean Difference (SMD)",
+    legend.pos = "none") + 
+    scale_x_discrete(labels = c("Overall effect")) +
+    scale_fill_manual(values = COL_POINT) +
+    scale_colour_manual(values = COL_LINE) +
+    ggtitle(cat)
+
+  ggsave(
+    file.path(OUT_DIR,"figs_png",paste0("orchard_",cat,".png")),
+    op,
+    width = 7,
+    height = 3,
+    dpi = 400
+  )
+
+  orchard_list[[cat]] <- op
+
+############################
+# EGGER REGRESSIONS
+############################
+
+  egger_SE <- rma.mv(
+    yi=yi, V=V,
+    random=~1|study_id/exp_id,
+    mods=~SE, test="t", data=es
+  )
+
+  egger_SEeff <- rma.mv(
+    yi=yi, V=V,
+    random=~1|study_id/exp_id,
+    mods=~SE_eff, test="t", data=es
+  )
+
+  egger_tbl <- tibble(
+    category = cat,
+    slope_SE = coef(egger_SE)[2],
+    p_SE = summary(egger_SE)$pval[2],
+    slope_SEeff = coef(egger_SEeff)[2],
+    p_SEeff = summary(egger_SEeff)$pval[2]
+  )
+
+  write_csv(egger_tbl,
+            file.path(OUT_DIR,"tables",paste0("egger_",cat,".csv")))
+
+############################
+# FUNNEL PLOT
+############################
+
+  png(file.path(OUT_DIR,"figs_png",paste0("funnel_",cat,".png")),
+      width=3000,height=2500,res=400)
+
+  funnel(mod_r,
+         xlab="Effect size (SMD)",
+         ylab="Sampling Error",
+         refline= coef(mod_r)[1])
+  dev.off()
+
+  es <- es %>%
+    mutate(
+      n_total = n_int + n_ctrl,
+      precision_n = 1 / sqrt(n_total)
+    )
+
+  fp_n <- ggplot(es, aes(x = yi, y = precision_n)) +
+    geom_point(
+      shape = 21,
+      fill = "white",
+      colour = "black",
+      size = 2
+    ) +
+    geom_vline(xintercept = coef(mod_r)[1], linetype = "dashed") +
+    theme_bw() +
+    labs(
+      x = "Effect size (SMD)",
+      y = "Precision (1/√n)"
+    )
+
+  ggsave(
+    file.path(OUT_DIR, "figs_png", paste0("funnel_n_", cat, ".png")),
+    fp_n,
+    width = 6,
+    height = 5,
+    dpi = 400
+  )
+
+############################
+# BUBBLE PLOT FOR SMALL STUDY EFFECTS
+############################ 
+
+  bp <- orchaRd::bubble_plot(
+    egger_SE,
+    mod = "SE",
+    group = "study_id",   
+    xlab  = "Sampling error (SE)",
+    ylab  = "Effect size estimates (SMD)",
+    legend.pos = "none"
+  )
+
+  ggsave(file.path(OUT_DIR,"figs_png",paste0("bubble_",cat,".png")),
+         bp,width=7,height=5,dpi=400)  
+
+############################
+# LEAVE-ONE-STUDY-OUT
+############################
+
+  loso_tbl <- map_dfr(unique(es$study_id), function(st){
+
+    es_loso <- es %>% filter(study_id != st)
+    V_loso  <- make_V(es_loso, RHO0)
+
+    m_loso <- rma.mv(
+      yi = yi,
+      V  = V_loso,
+      random = ~ 1 | study_id/exp_id,
+      method = "REML",
+      data = es_loso
+    )
+
+    tibble(
+      category = cat,
+      left_out = as.character(st),
+      estimate = as.numeric(coef(m_loso)),
+      ci_lb = m_loso$ci.lb,
+      ci_ub = m_loso$ci.ub,
+      p_value = summary(m_loso)$pval,
+      sigma2_between = m_loso$sigma2[1],
+      sigma2_within  = m_loso$sigma2[2],
+      k = m_loso$k,
+      n_studies = n_distinct(es_loso$study_id)
+    )
+  })
+
+  write_csv(
+    loso_tbl,
+    file.path(OUT_DIR,"tables",paste0("leave_one_out_full_",cat,".csv"))
+  )
+
+############################
+# EXCLUDE HIGH RISK OF BIAS
+############################
+
+  es_low <- es %>% filter(overall_rob != "High")
+  V_low  <- make_V(es_low, RHO0)
+
+  m_low <- rma.mv(
+    yi = yi,
+    V  = V_low,
+    random = ~ 1 | study_id/exp_id,
+    method = "REML",
+    data = es_low
+  )
+
+  rob_tbl <- tibble(
+    category = cat,
+    estimate = as.numeric(coef(m_low)),
+    ci_lb = m_low$ci.lb,
+    ci_ub = m_low$ci.ub,
+    p_value = summary(m_low)$pval,
+    sigma2_between = m_low$sigma2[1],
+    sigma2_within  = m_low$sigma2[2],
+    k = m_low$k,
+    n_studies = n_distinct(es_low$study_id)
+  )
+
+  write_csv(
+    rob_tbl,
+    file.path(OUT_DIR,"tables",paste0("risk_bias_full_",cat,".csv"))
+  )
+
+############################
+# RHO SENSITIVITY
+############################
+
+  rho_cat <- map_dfr(RHO_GRID, function(r){
+
+    Vr <- make_V(es, r)
+
+    mr <- rma.mv(
+      yi = yi,
+      V  = Vr,
+      random = ~ 1 | study_id/exp_id,
+      method = "REML",
+      data = es
+    )
+
+    tibble(
+       category = cat,
+      rho = r,
+      estimate = as.numeric(coef(mr)),
+      ci_lb = mr$ci.lb,
+      ci_ub = mr$ci.ub,
+      p_value = summary(mr)$pval,
+      sigma2_between = mr$sigma2[1],
+      sigma2_within  = mr$sigma2[2],
+      k = mr$k,
+      n_studies = n_distinct(es$study_id)
+    )
+  })
+
+  rho_sensitivity[[cat]] <- rho_cat
+
+  rho_all <- bind_rows(rho_sensitivity)
+  write_csv(
+    rho_all,
+    file.path(OUT_DIR,"tables","rho_sensitivity_all_categories_full.csv")
+  )
+}
+
+############################
+# FOREST MISCELLANEOUS
+############################
+
+dat_misc <- read_csv("miscellaneous_shoal_cohesion.csv", show_col_types = FALSE)
+
+es_misc <- dat_misc %>%
+  mutate(
+    sd_int  = abs(sd_int),
+    sd_ctrl = abs(sd_ctrl)
+  )
+
+es_misc <- escalc(
+  measure = "SMD",
+  m1i = mean_int, sd1i = sd_int, n1i = n_int,
+  m2i = mean_ctrl, sd2i = sd_ctrl, n2i = n_ctrl,
+  data = es_misc
+)
+
+if ("effect_direction" %in% names(es_misc)) {
+  flip <- ifelse(tolower(es_misc$effect_direction) == "indirect", -1, 1)
+  es_misc$yi <- es_misc$yi * flip
+}
+
+es_misc <- es_misc %>%
+  mutate(
+    study_label = gsub("_", " ", study_id),
+    intervention = name_int
+  )
+
+mod_fake <- rma.uni(
+  yi = es_misc$yi,
+  vi = es_misc$vi,
+  method = "FE"
+)
+
+n_es_misc <- mod_fake$k
+fig_height_misc <- max(4000, n_es_misc * 100)
+
+png(
+  file.path(OUT_DIR, "figs_png", "forest_miscellaneous.png"),
+  width = 6200,
+  height = fig_height_misc,
+  res = 400
+)
+
+forest(
+  mod_fake,
+  slab = es_misc$study_label,
+  ilab = cbind(es_misc$intervention, es_misc$pharmacological_action),
+  ilab.xpos = c(-52, -29),
+  xlim = c(-72, 25),
+  alim = c(-10, 10),
+  refline = 0,
+  addfit = FALSE,
+  addpred = FALSE,
+  pch = 22,
+  bg  = COL_POINT,
+  col = COL_LINE,
+  border = COL_BORDER
+)
+
+text(-52, mod_fake$k + 2, "Intervention", font = 2)
+text(-29, mod_fake$k + 2, "Pharmacological action", font = 2)
+
+dev.off()
+
+############################
+# COMBINED ORCHARD PLOT
+############################
+
+combined_orchard <- wrap_plots(
+  orchard_list,
+  ncol = 2
+)
+
+ggsave(
+  filename = file.path(OUT_DIR, "figs_png", "orchard_all_categories.png"),
+  plot = combined_orchard,
+  width = 14,
+  height = 3 * ceiling(length(orchard_list) / 2),
+  dpi = 400
+)
+```
+
+# Results by category
+
+```{r narrative-results}
+for(cat in categories){
+
+  cat("\n\n## Category: ", cat, "\n", sep = "")
+
+  es <- prepare_category(dat_raw, cat)
+  V  <- make_V(es, RHO0)
+  mod <- rma.mv(
+    yi = yi,
+    V  = V,
+    random = ~ 1 | study_id/exp_id,
+    method = "REML",
+    data = es
+  )
+
+  mod_r <- robust(mod, cluster = es$study_id)
+  
+  cat("\n### Overall effect\n\n```text\n")
+  print(mod_r)
+  cat("```\n")
+
+  main_tbl <- read_csv(
+    file.path(OUT_DIR,"tables",paste0("main_meta_",cat,".csv")),
+    show_col_types = FALSE
+  )
+
+  print(knitr::kable(main_tbl, digits = 4))
+
+  cat("\n### Forest plot\n")
+  cat("\n**Caption.** Forest plot of individual effect sizes and the pooled multilevel estimate, including a prediction interval.\n")
+  cat("**Interpretation.** The pooled summary represents the average effect; the prediction interval reflects the expected range of true effects in new studies given heterogeneity.\n")
+  cat(paste0("\n![](", file.path(OUT_DIR,"figs_png",paste0("forest_",cat,".png")), ")\n"))
+
+  cat("\n### Heterogeneity and variance decomposition\n")
+  i2_tbl <- read_csv(
+    file.path(OUT_DIR,"tables",paste0("i2_multilevel_",cat,".csv")),
+    show_col_types = FALSE
+  )
+  print(knitr::kable(i2_tbl, digits = 3))
+  cat("\n**Interpretation.** I² quantifies the proportion of variability attributable to heterogeneity rather than sampling error, decomposed into between- and within-study components.\n")
+
+  cat("\n### Distribution of effects (orchard plot)\n")
+  cat("\n**Caption.** Orchard plot for the multilevel model for this category (PNG saved by the pipeline; colour scheme matches the original script).\n")
+  cat("**Interpretation.** Orchard plots complement forest plots by visualising the distribution of effects with multilevel uncertainty and heterogeneity.\n")
+  cat(paste0("\n![](", file.path(OUT_DIR,"figs_png",paste0("orchard_",cat,".png")), ")\n"))
+
+  cat("\n### Small-study effects and publication bias\n")
+
+  egger_tbl <- read_csv(
+    file.path(OUT_DIR,"tables",paste0("egger_",cat,".csv")),
+    show_col_types = FALSE
+  )
+  cat("\n#### Egger-type regressions\n")
+  print(knitr::kable(egger_tbl, digits = 4))
+  cat("\n**Interpretation.** The slope tests whether effect sizes are associated with sampling error (SE) or effective SE. Consistent significance may indicate small-study effects.\n")
+
+  cat("\n#### Funnel plot (Sampling Error)\n")
+  cat("\n**Caption.** Funnel plot using Sampling Error.\n")
+  cat("**Interpretation.** Symmetry suggests little evidence of small-study effects; asymmetry suggests potential dissemination bias or related mechanisms.\n")
+  cat(paste0("\n![](", file.path(OUT_DIR,"figs_png",paste0("funnel_",cat,".png")), ")\n"))
+
+  cat("\n#### Funnel plot (precision = 1/√n)\n")
+  cat("\n**Caption.** Funnel plot using 1/√n as an alternative measure of precision.\n")
+  cat("**Interpretation.** Agreement between the two funnel diagnostics strengthens inference about small-study effects.\n")
+  cat(paste0("\n![](", file.path(OUT_DIR,"figs_png",paste0("funnel_n_",cat,".png")), ")\n"))
+
+  cat("\n#### Bubble plot (Egger regression)\n")
+  cat("\n**Caption.** Bubble plot of effect sizes versus sampling error (SE), with study clustering.\n")
+  cat("**Interpretation.** A visually non-zero slope is consistent with Egger regression evidence for small-study effects; a near-zero slope supports their absence.\n")
+  cat(paste0("\n![](", file.path(OUT_DIR,"figs_png",paste0("bubble_",cat,".png")), ")\n"))
+
+  cat("\n### Sensitivity analyses\n")
+
+  cat("\n#### 5.1 Leave-one-study-out\n")
+  cat("This analysis repeats the meta-analysis while removing one study at a time to assess influence.\n")
+  cat("**Interpretation.** Large shifts in the pooled estimate indicate influential studies; stability indicates robustness.\n")
+
+  loso_tbl <- read_csv(
+    file.path(OUT_DIR,"tables",paste0("leave_one_out_full_",cat,".csv")),
+    show_col_types = FALSE
+  )
+  print(knitr::kable(loso_tbl, digits = 4))
+
+  cat("\n#### 5.2 Excluding high risk-of-bias studies\n")
+  cat("This analysis repeats the meta-analysis after excluding studies classified as high risk of bias.\n")
+  cat("**Interpretation.** Differences from the main pooled effect indicate sensitivity to study quality; similar results suggest robustness.\n")
+
+  rob_tbl <- read_csv(
+    file.path(OUT_DIR,"tables",paste0("risk_bias_full_",cat,".csv")),
+    show_col_types = FALSE
+  )
+  print(knitr::kable(rob_tbl, digits = 4))
+
+  cat("\n#### Sensitivity to within-study correlation (rho)\n")
+  cat("This analysis varies the assumed within-study correlation among effect sizes.\n")
+  cat("**Interpretation.** Stability of pooled estimates across rho values indicates robustness to assumptions about within-study dependence.\n")
+
+  rho_tbl <- read_csv(
+    file.path(OUT_DIR,"tables","rho_sensitivity_all_categories_full.csv"),
+    show_col_types = FALSE
+  ) %>% dplyr::filter(category == cat)
+
+  print(knitr::kable(rho_tbl, digits = 4))
+}
+```
+
+# Combined orchard plots across all categories
+
+```{r combined-orchard}
+wrap_plots(orchard_list, ncol = 2)
+```
+
+**Caption.** Combined orchard plots for all categories.  
+**Interpretation.** This panel supports direct comparison of pooled effects and uncertainty across categories.
+
+# Miscellaneous studies
+
+```{r misc-forest}
+knitr::include_graphics(
+  file.path(OUT_DIR,"figs_png","forest_miscellaneous.png")
+)
+```
+
+**Caption.** Forest plot for miscellaneous studies (descriptive fixed-effect display).  
+**Interpretation.** Miscellaneous studies are shown descriptively and not pooled into the main multilevel models due to conceptual heterogeneity.
+
+# Computational environment
+
+```{r session-info}
+cat("R version: ", R.version.string, "\n")
+cat("Platform: ", paste(Sys.info()[c("sysname","release","machine")], collapse = " / "), "\n")
+cat("Render date: 2025-12-14\n\n")
+sessionInfo()
+```

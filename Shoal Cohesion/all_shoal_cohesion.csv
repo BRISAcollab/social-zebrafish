@@ -1,0 +1,52 @@
+effect_id,study_id,exp_id,category,outcome_pattern,effect_direction,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,n_int,mean_int,sd_int,overall_rob
+1,Li_2022,Li_2022_exp_001,Anxiolytics,interfish_distance,indirect,Control,3,7.463,0.3862473301,Amitriptyline,3,7.682,0.130769836,Low
+2,Li_2022,Li_2022_exp_002,Anxiolytics,interfish_distance,indirect,Control,3,7.2395,0.328223628,Amitriptyline,3,6.217,0.8634273276,Low
+3,Zhang_2023,Zhang_2023_exp_001,Anxiolytics,interfish_distance,indirect,Control,3,6.6515,0.7352555678,Amitriptyline,3,6.2905,0.7040786533,Low
+4,Maaswinkel_2013_B,Maaswinkel_2013_B_exp_001,Anxiolytics,interfish_distance,indirect,Control,10,73.835,22.71305929,Buspirone,10,66.8305,22.33832939,Low
+5,Maaswinkel_2013_B,Maaswinkel_2013_B_exp_002,Anxiolytics,interfish_distance,indirect,Control,15,68.865,27.58532388,Buspirone,15,72.467,25.00978996,Low
+6,Johnson_2023,Johnson_2023_exp_001,Anxiolytics,interfish_distance,indirect,Control,20,6.36,1.744133022,Chlordiazepoxide,10,5.69,1.170042734,Low
+7,Johnson_2023,Johnson_2023_exp_001,Anxiolytics,interfish_distance,indirect,Control,20,6.36,1.744133022,Chlordiazepoxide,10,8.003,2.501361629,Low
+8,Johnson_2023,Johnson_2023_exp_001,Anxiolytics,interfish_distance,indirect,Control,20,6.36,1.744133022,Chlordiazepoxide,9,10.65,3.03,Low
+9,Chen_2021,Chen_2021_exp_001,Anxiolytics,interfish_distance,indirect,Control,3,4.838825,1.1293,Diazepam,3,5.51159,0.344915,Low
+10,Chen_2021,Chen_2021_exp_001,Anxiolytics,interfish_distance,indirect,Control,3,4.838825,1.1293,Diazepam,3,6.512995,0.56115,Low
+11,Chen_2021,Chen_2021_exp_002,Anxiolytics,interfish_distance,indirect,Control,3,6.327535,1.112025,Diazepam,3,5.822945,0.55665,Low
+12,Chen_2021,Chen_2021_exp_002,Anxiolytics,interfish_distance,indirect,Control,3,6.327535,1.112025,Diazepam,3,6.515495,0.51309,Low
+13,Rosa_2020,Rosa_2020_exp_001,Anxiolytics,interfish_distance,indirect,Control,7,6.942785,1.342894772,Diazepam,7,8.359645,1.443501925,Low
+14,Adel_2024,Adel_2024_exp_001,Anxiolytics,interfish_distance,indirect,Control,10,592.0145,40.9185,Fluoxetine,10,639.0005,76.9165,Low
+15,Ariyasiri_2021,Ariyasiri_2021_exp_001,Ethanol,interfish_distance,indirect,Control,9,4.3235,0.747,Ethanol,9,6.822,0.8265,Low
+16,Buske_2011,Buske_2011_exp_001,Ethanol,interfish_distance,indirect,Control,8,10.0785,3.222992709,Ethanol,8,9.366,3.047630227,Low
+17,Buske_2011,Buske_2011_exp_001,Ethanol,interfish_distance,indirect,Control,8,10.0785,3.222992709,Ethanol,8,10.233,4.398204179,Low
+18,Fontana_2018,Fontana_2018_exp_001,Ethanol,interfish_distance,indirect,Control,6,5.28019,0.5589123221,Ethanol,6,5.2547,1.141682674,High
+19,Kurta_2010,Kurta_2010_exp_001,Ethanol,nearest_neighbor_distance,indirect,Control,10,2.322,0.8854377448,Ethanol,10,1.39,0.6308743932,Low
+20,Kurta_2010,Kurta_2010_exp_001,Ethanol,nearest_neighbor_distance,indirect,Control,10,2.322,0.8854377448,Ethanol,10,1.2955,0.4443000113,Low
+21,Kurta_2010,Kurta_2010_exp_001,Ethanol,nearest_neighbor_distance,indirect,Control,10,2.322,0.8854377448,Ethanol,10,2.184,0.651429198,Low
+22,Kurta_2010,Kurta_2010_exp_001,Ethanol,nearest_neighbor_distance,indirect,Control,10,2.322,0.8854377448,Ethanol,10,5.4105,1.187435261,Low
+23,Maaswinkel_2013_B,Maaswinkel_2013_B_exp_001,Ethanol,interfish_distance,indirect,Control,12,78.9245,22.57381818,Ethanol,12,84.502,30.23294685,Low
+24,Maaswinkel_2013_B,Maaswinkel_2013_B_exp_002,Ethanol,interfish_distance,indirect,Control,10,59.648,13.61360533,Ethanol,10,104.3845,26.73547648,Low
+25,Müller_2017,Müller_2017_exp_001,Ethanol,interfish_distance,indirect,Control,8,4.824875,1.006099813,Ethanol,8,3.77541,0.4422670074,Low
+26,Parker_2014,Parker_2014_exp_001,Ethanol,dispersion_index,direct,Control,4,2.6705,0.128,Ethanol,4,1.6065,0.126,Low
+27,Stefanello_2021,Stefanello_2021_exp_001,Ethanol,interfish_distance,indirect,Control,4,5.973,1.505211447,Ethanol,4,4.0895,0.4617288165,Low
+28,Riehl_2011,Riehl_2011_exp_001,NMDA antagonists,interfish_distance,indirect,Control,2,0.064,0.002121320344,Ketamine,2,0.098,0.002828427125,High
+29,Riehl_2011,Riehl_2011_exp_001,NMDA antagonists,interfish_distance,indirect,Control,2,0.064,0.002121320344,Ketamine,2,0.122,0.002121320344,High
+30,Franscescon_2021,Franscescon_2021_exp_001,NMDA antagonists,interfish_distance,indirect,Control,6,4.4985,0.437871842,MK-801,6,7.1365,1.472360605,Low
+31,Maaswinkel_2013_A,Maaswinkel_2013_A_exp_001,NMDA antagonists,interfish_distance,indirect,Control,20,44.1835,12.76123995,MK-801,20,74.195,16.23385352,Low
+32,Maaswinkel_2013_A,Maaswinkel_2013_A_exp_001,NMDA antagonists,interfish_distance,indirect,Control,20,44.1835,12.76123995,MK-801,20,92.824,26.45492024,Low
+33,Maaswinkel_2013_A,Maaswinkel_2013_A_exp_001,NMDA antagonists,interfish_distance,indirect,Control,20,44.1835,12.76123995,MK-801,19,129.4685,12.43811814,Low
+34,Maaswinkel_2013_C,Maaswinkel_2013_C_exp_001,NMDA antagonists,interfish_distance,indirect,Control,14,44.4955,10.33819936,MK-801,16,125.746,19.63,Low
+35,Mccutcheon_2016,Mccutcheon_2016_exp_001,NMDA antagonists,interfish_distance,indirect,Control,6,5.1535,0.1788127512,MK-801,6,5.0995,0.1322724461,Low
+36,Kyzar_2012,Kyzar_2012_exp_001,NMDA antagonists,interfish_distance,indirect,Control,3,7.4495,0.8798818102,Phencyclidine,3,7.6365,1.070407399,High
+37,Canzian_2017,Canzian_2017_exp_001,Stress,interfish_distance,indirect,Control,8,6.3655,0.4087077195,Alarm substance,8,5.3345,0.8555992052,High
+38,Canzian_2017,Canzian_2017_exp_002,Stress,interfish_distance,indirect,Control,8,5.206,0.7410479067,Alarm substance,8,5.91,1.309561759,High
+39,Green_2012,Green_2012_exp_001,Stress,interfish_distance,indirect,Control,8,5.078,0.248901587,Alarm substance,8,4.5325,0.2107178208,Low
+40,Rosa_2020,Rosa_2020_exp_001,Stress,interfish_distance,indirect,Control,7,6.942785,1.342894772,Alarm substance,7,5.29543,0.9030743545,Low
+41,Chakravarty_2013,Chakravarty_2013_exp_001,Stress,latency_shoaling,indirect,Control,30,10.5755,8.818333176,Chronic unpredictable stress,30,4.738,6.000300617,High
+42,Fontana_2020,Fontana_2020_exp_001,Stress,dispersion_index,direct,Control,8,0.931,0.2559726548,Chronic unpredictable stress,8,0.9245,0.2404163056,High
+43,Fontana_2021,Fontana_2021_exp_001,Stress,interfish_distance,indirect,Control,7,6.3845,0.930552524,Chronic unpredictable stress,7,6.3675,1.285520128,High
+44,Fontana_2021,Fontana_2021_exp_001,Stress,interfish_distance,indirect,Control,7,6.3845,0.930552524,Chronic unpredictable stress,7,6.9925,0.8315575747,High
+45,Fontana_2021,Fontana_2021_exp_001,Stress,interfish_distance,indirect,Control,7,6.3845,0.930552524,Chronic unpredictable stress,7,6.357,0.7509474016,High
+46,Fontana_2021,Fontana_2021_exp_001,Stress,interfish_distance,indirect,Control,7,6.3845,0.930552524,Chronic unpredictable stress,7,6.6005,0.940452019,High
+47,Wang_2024,Wang_2024_exp_001,Stress,interfish_distance,indirect,Control,18,9.683,1.83581181,Chronic unpredictable stress,18,5.5145,1.431083506,High
+48,Liu_2024,Liu_2024_exp_001,Stress,interfish_distance,indirect,Control,5,5.692625,0.77334411,Cold water,5,4.10568,0.4734203122,Low
+49,Müller_2024,Müller_2024_exp_001,Stress,interfish_distance,indirect,Control,5,7.2155,0.8027484039,Social isolation,5,4.7075,1.760903532,High
+50,Shams_2017_A,Shams_2017_A_exp_001,Stress,interfish_distance,indirect,Control,7,12.856275,4.189745632,Social isolation,3,11.730485,2.652436626,High
+51,Shams_2017_A,Shams_2017_A_exp_001,Stress,interfish_distance,indirect,Control,7,12.856275,4.189745632,Social isolation,6,29.708345,3.193032354,High

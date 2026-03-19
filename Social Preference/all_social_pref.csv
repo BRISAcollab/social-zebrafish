@@ -1,0 +1,160 @@
+effect_id,category,study_id,exp_id,outcome_pattern,effect_direction,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,n_int,mean_int,sd_int,overall_rob
+1,Anxiolytics,Baggio_2018,Baggio_2018_exp_001,time_in_social,direct,Control,8,283.6665,51.19453096,Buspirone,8,168.1405,82.56178777,High
+2,Anxiolytics,Barba-escobedo_2012,Barba-escobedo_2012_exp_001,time_in_social,direct,Control,9,175.5865,138.7605,Buspirone,5,380.3415,197.3408253,Low
+3,Anxiolytics,Vecchia_2019,Vecchia_2019_exp_001,time_in_social,direct,Control,8,89.88644,73.1381757,Buspirone,8,57.741125,35.61063289,Low
+4,Anxiolytics,Gusso_2021,Gusso_2021_exp_001,time_in_social,direct,Control,27,225.26,74.70248531,Clonazepam,19,184.5805,74.97088238,Low
+5,Anxiolytics,Joseph_2021,Joseph_2021_exp_001,time_in_social,direct,Control,8,304.588,72.91067874,Duloxetine,8,292.102,72.84659286,Low
+6,Anxiolytics,Adel_2024,Adel_2024_exp_001,time_in_social,direct,Control,10,53.293,30.5825,Fluoxetine,10,53.799,39.6245,Low
+7,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,233.392,65.467,Amphetamine,12,223.725,67.232,Low
+8,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,233.392,65.467,Amphetamine,12,227.558,44.08,Low
+9,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,233.392,65.467,Amphetamine,12,207.925,69.96,Low
+10,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_social,direct,Control,12,55.455,9.496834578,GBR 12909,12,52.702,11.1578713,Low
+11,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_social,direct,Control,12,55.455,9.496834578,GBR 12909,12,32.8355,18.64379489,Low
+12,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_social,direct,Control,12,55.455,9.496834578,GBR 12909,12,32.771,19.14608963,Low
+13,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_social,direct,Control,12,55.455,9.496834578,GBR 12909,12,37.674,24.55008815,Low
+14,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_in_social,direct,Control,10,78.87,14.89432778,Methamphetamine,10,85.626,12.12101027,Low
+15,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_in_social,direct,Control,10,78.87,14.89432778,Methamphetamine,10,58.78,16.06437051,Low
+16,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_in_social,direct,Control,10,78.87,14.89432778,Methamphetamine,10,62.7255,19.15549693,Low
+17,Pro-dopaminergic agents,Freddo_2021,Freddo_2021_exp_001,time_in_social,direct,Control,12,36.9715,19.57563823,Methylphenidate,12,18.3665,4.132673227,Low
+18,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_social,direct,Control,12,37.143,20.74477252,Methylphenidate,12,19.195,19.04909478,Low
+19,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_social,direct,Control,12,37.143,20.74477252,Methylphenidate,12,29.9885,19.61201129,Low
+20,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_social,direct,Control,12,37.143,20.74477252,Methylphenidate,12,13.329,19.39896904,Low
+21,Pro-dopaminergic agents,Nardi_2024,Nardi_2024_exp_001,time_in_social,direct,Control,12,21.143,54.57692095,Methylphenidate,12,25.7735,57.04509335,High
+22,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_social,direct,Control,12,9.90524,0.298155226,Estradiol,12,9.96731,0.298155226,High
+23,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_social,direct,Control,12,9.90524,0.298155226,Estradiol,12,8.846745,2.511958645,High
+24,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_social,direct,Control,12,9.90524,0.298155226,Estradiol,12,9.13053,1.570467788,High
+25,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_social,direct,Control,12,9.90524,0.298155226,Estradiol,12,9.14253,1.536069259,High
+26,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_social,direct,Control,12,9.90524,0.298155226,Estradiol,12,9.13053,2.172216879,High
+27,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_social,direct,Control,12,9.178445,1.121121847,Estradiol,12,9.49063,1.277006419,High
+28,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_social,direct,Control,12,9.178445,1.121121847,Estradiol,12,1.226555,1.277006419,High
+29,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_social,direct,Control,12,9.178445,1.121121847,Estradiol,12,0.2455,0.3100370946,High
+30,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_social,direct,Control,12,9.178445,1.121121847,Estradiol,12,1.81779,2.705480682,High
+31,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_social,direct,Control,12,9.178445,1.121121847,Estradiol,12,4.48327,4.597521023,High
+32,Estradiol and alike,Moraes_2021,Moraes_2021_exp_001,time_in_social,direct,Control,32,6.45535,3.974816923,Estradiol,32,8.74938,2.537693101,Low
+33,Estradiol and alike,Reyhanian_2011,Reyhanian_2011_exp_001,time_in_empty,indirect,Control,29,72.847,41.34998797,Estradiol,29,45.9655,36.41717701,Low
+34,Estradiol and alike,Reyhanian_2011,Reyhanian_2011_exp_001,time_in_empty,indirect,Control,29,72.847,41.34998797,Estradiol,28,77.4195,42.56749284,Low
+35,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Estradiol,24,4.045545,7.228027818,High
+36,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Estradiol,24,1.883805,5.158649893,High
+37,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Estradiol,24,12.072425,9.834897276,High
+38,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Estradiol,24,9.73398,10.15440872,High
+39,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Estradiol,24,6.03084,13.9012707,High
+40,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Estradiol,24,7.53101,12.96284669,High
+41,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Estradiol,24,7.28595,14.20748142,High
+42,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Estradiol,24,5.22904,5.767299104,High
+43,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Estradiol,24,1.635325,4.052264366,High
+44,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Estradiol,24,7.572515,9.371135383,High
+45,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_social,direct,Control,24,46.891,17.86412869,Estradiol,24,32.7595,16.28175832,Low
+46,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_social,direct,Control,24,46.891,17.86412869,Estradiol,24,28.6905,28.15688459,Low
+47,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_social,direct,Control,24,46.891,17.86412869,Estradiol,24,26.6385,23.65717194,Low
+48,Estradiol and alike,Wang_2015,Wang_2015_exp_001,time_in_social,direct,Control,11,90.622,30.46651532,Estradiol,11,81.346,38.53420513,High
+49,Estradiol and alike,Menegasso_2021,Menegasso_2021_exp_001,time_in_social,direct,Control,12,51.9395,9.545332001,Genistein,12,44.495,17.12305428,Low
+50,Estradiol and alike,Menegasso_2021,Menegasso_2021_exp_001,time_in_social,direct,Control,12,51.9395,9.545332001,Genistein,12,23.124,16.51510445,Low
+51,Ethanol,Araujo-Silva_2018,Araujo-Silva_2018_exp_001,time_in_social,direct,Control,15,322.0345,126.3270343,Ethanol,15,254.207,193.1456795,Low
+52,Ethanol,Araujo-Silva_2018,Araujo-Silva_2018_exp_001,time_in_social,direct,Control,15,322.0345,126.3270343,Ethanol,15,263.305,196.7146336,Low
+53,Ethanol,Araujo-Silva_2018,Araujo-Silva_2018_exp_002,time_in_social,direct,Control,15,498.4325,82.95543029,Ethanol,15,222.1435,212.5241516,Low
+54,Ethanol,Araujo-Silva_2018,Araujo-Silva_2018_exp_002,time_in_social,direct,Control,15,498.4325,82.95543029,Ethanol,15,240.675,184.5573389,Low
+55,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_social,direct,Control,8,278.3945,50.75753897,Ethanol,8,221.662,82.55330249,High
+56,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_social,direct,Control,8,278.3945,50.75753897,Ethanol,8,162.0675,34.51671042,High
+57,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_social,direct,Control,8,278.3945,50.75753897,Ethanol,8,68.482,46.64076329,High
+58,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_social,direct,Control,8,278.3945,50.75753897,Ethanol,8,88.523,59.01371774,High
+59,Ethanol,Fernandes_2009,Fernandes_2009_exp_001,distance_to_social_delta,indirect,Control,22,-16.08,12.49292238,Ethanol,20,-11.3635,14.00225768,High
+60,Ethanol,Fernandes_2009,Fernandes_2009_exp_001,distance_to_social_delta,indirect,Control,22,-16.08,12.49292238,Ethanol,21,-8.3425,14.79026306,High
+61,Ethanol,Fernandes_2009,Fernandes_2009_exp_001,distance_to_social_delta,indirect,Control,22,-16.08,12.49292238,Ethanol,21,-8.3425,13.90811723,High
+62,Ethanol,Fernandes_2009,Fernandes_2009_exp_001,distance_to_social_delta,indirect,Control,22,-16.08,12.49292238,Ethanol,19,-2.8615,14.12283258,High
+63,Ethanol,Fernandes_2015_A,Fernandes_2015_A_exp_001,distance_to_social_delta,indirect,Control,26,-8.175,8.38533759,Ethanol,17,-2.4425,6.827862916,Low
+64,Ethanol,Fernandes_2015_B,Fernandes_2015_B_exp_001,distance_to_social_delta,indirect,Control,29,-12.3555,8.831670284,Ethanol,30,-8.5675,11.73221718,High
+65,Ethanol,Fernandes_2015_B,Fernandes_2015_B_exp_001,distance_to_social_delta,indirect,Control,29,-12.3555,8.831670284,Ethanol,29,-2.6315,9.531741709,High
+66,Ethanol,Fernandes_2018,Fernandes_2018_exp_001,time_in_social,direct,Control,12,68.901,25.93572879,Ethanol,12,31.7315,23.74641657,Low
+67,Ethanol,Fernandes_2018,Fernandes_2018_exp_001,time_in_social,direct,Control,12,68.901,25.93572879,Ethanol,11,38.5865,21.73550056,Low
+68,Ethanol,Fontana_2018,Fontana_2018_exp_001,time_in_social,direct,Control,10,88.92478,19.73862421,Ethanol,10,73.91165,34.79546312,High
+69,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_social,direct,Control,15,65.1015,25.47261147,Ethanol,9,46.16,40.659,Low
+70,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_social,direct,Control,15,65.1015,25.47261147,Ethanol,6,23.22,31.78702839,Low
+71,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_social,direct,Control,15,65.1015,25.47261147,Ethanol,9,27.5205,19.758,Low
+72,Ethanol,Gerlai_2003,Gerlai_2003_exp_001,time_in_social,direct,Control,15,65.407,24.5121116,Ethanol,9,45.8985,41.3835,Low
+73,Ethanol,Gerlai_2003,Gerlai_2003_exp_001,time_in_social,direct,Control,15,65.407,24.5121116,Ethanol,6,23.441,30.627195,Low
+74,Ethanol,Gerlai_2003,Gerlai_2003_exp_001,time_in_social,direct,Control,15,65.407,24.5121116,Ethanol,9,27.25,20.553,Low
+75,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,time_in_social,direct,Control,10,28.494,21.6995493,Ethanol,15,9.421,11.35946015,Low
+76,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,time_in_social,direct,Control,10,28.494,21.6995493,Ethanol,11,11.8455,12.37266878,Low
+77,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,time_in_social,direct,Control,10,28.494,21.6995493,Ethanol,15,10.5865,13.68905964,Low
+78,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,time_in_social,direct,Control,9,18.567,13.308,Ethanol,12,18.253,16.17215839,Low
+79,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,time_in_social,direct,Control,9,18.567,13.308,Ethanol,14,16.2335,16.53999648,Low
+80,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,time_in_social,direct,Control,9,18.567,13.308,Ethanol,15,9.2685,13.03839844,Low
+81,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,time_in_social,direct,Control,11,29.2555,18.12203785,Ethanol,15,16.181,18.86336539,Low
+82,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,time_in_social,direct,Control,11,29.2555,18.12203785,Ethanol,14,22.249,21.16468501,Low
+83,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,time_in_social,direct,Control,11,29.2555,18.12203785,Ethanol,13,16.7175,25.55975299,Low
+84,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,time_in_social,direct,Control,12,24.1795,22.9462091,Ethanol,15,10.4445,13.12747705,Low
+85,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,time_in_social,direct,Control,12,24.1795,22.9462091,Ethanol,10,10.967,7.570492718,Low
+86,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,time_in_social,direct,Control,12,24.1795,22.9462091,Ethanol,11,12.184,8.656390703,Low
+87,Ethanol,Gerlai_2009,Gerlai_2009_exp_001,distance_to_social_delta,indirect,Control,17,-15.3835,8.61935231,Ethanol,13,-17.6215,10.53361805,Low
+88,Ethanol,Gerlai_2009,Gerlai_2009_exp_001,distance_to_social_delta,indirect,Control,17,-15.3835,8.61935231,Ethanol,18,-14.012,7.47341157,Low
+89,Ethanol,Gerlai_2009,Gerlai_2009_exp_001,distance_to_social_delta,indirect,Control,17,-15.3835,8.61935231,Ethanol,16,-3.2975,15.298,Low
+90,Ethanol,Gerlai_2009,Gerlai_2009_exp_001,distance_to_social_delta,indirect,Control,17,-15.3835,8.61935231,Ethanol,15,-1.1345,12.84474927,Low
+91,Ethanol,Gerlai_2009,Gerlai_2009_exp_002,distance_to_social_delta,indirect,Control,15,-11.342,12.72275029,Ethanol,15,-7.0385,13.75877334,Low
+92,Ethanol,Gerlai_2009,Gerlai_2009_exp_002,distance_to_social_delta,indirect,Control,15,-11.342,12.72275029,Ethanol,17,-9.9035,10.63142786,Low
+93,Ethanol,Gerlai_2009,Gerlai_2009_exp_002,distance_to_social_delta,indirect,Control,15,-11.342,12.72275029,Ethanol,14,-5.2725,6.5722212,Low
+94,Ethanol,Gerlai_2009,Gerlai_2009_exp_002,distance_to_social_delta,indirect,Control,15,-11.342,12.72275029,Ethanol,14,-10.5995,9.385947555,Low
+95,Ethanol,Lutte_2020,Lutte_2020_exp_001,time_in_social,direct,Control,10,265.4205,22.642,Ethanol,10,212.419,47.4615,Low
+96,Ethanol,Lutte_2020,Lutte_2020_exp_001,time_in_social,direct,Control,10,265.4205,22.642,Ethanol,10,188.827,14.6895,Low
+97,Ethanol,Lutte_2020,Lutte_2020_exp_002,time_in_social,direct,Control,10,210.9015,34.5725,Ethanol,10,250.729,35.1905,Low
+98,Ethanol,Lutte_2020,Lutte_2020_exp_002,time_in_social,direct,Control,10,210.9015,34.5725,Ethanol,10,240.739,30.881,Low
+99,Ethanol,Parker_2014,Parker_2014_exp_001,time_in_social,direct,Control,33,1064.774,134.1527715,Ethanol,30,941.8495,243.9802746,Low
+100,Ethanol,Scerbina_2022,Scerbina_2022_exp_001,distance_to_social_delta,indirect,Control,20,-14.576,7.502008065,Ethanol,20,-16.252,9.33111167,Low
+101,Ethanol,Scerbina_2022,Scerbina_2022_exp_001,distance_to_social_delta,indirect,Control,20,-14.576,7.502008065,Ethanol,20,-10.886,9.662049731,Low
+102,Ethanol,Scerbina_2022,Scerbina_2022_exp_001,distance_to_social_delta,indirect,Control,20,-14.576,7.502008065,Ethanol,19,-4.2065,7.46679389,Low
+103,Ethanol,Scerbina_2022,Scerbina_2022_exp_002,distance_to_social_delta,indirect,Control,20,-9.9745,9.92814182,Ethanol,20,-11.792,10.99474625,Low
+104,Ethanol,Scerbina_2022,Scerbina_2022_exp_002,distance_to_social_delta,indirect,Control,20,-9.9745,9.92814182,Ethanol,20,-11.5235,10.35075867,Low
+105,Ethanol,Scerbina_2022,Scerbina_2022_exp_002,distance_to_social_delta,indirect,Control,20,-9.9745,9.92814182,Ethanol,20,-2.5555,8.588737102,Low
+106,NMDA antagonists,Riehl_2011,Riehl_2011_exp_001,time_in_social,direct,Control,12,116.455,83.29951949,Ketamine,12,87.128,38.93996626,High
+107,NMDA antagonists,Riehl_2011,Riehl_2011_exp_001,time_in_social,direct,Control,12,116.455,83.29951949,Ketamine,12,70.6645,45.80754771,High
+108,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,205.04,75.91,MK-801,12,197.242,100.09,Low
+109,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,205.04,75.91,MK-801,11,89.455,34.775,Low
+110,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_social,direct,Control,12,205.04,75.91,MK-801,11,104.409,52.281,Low
+111,NMDA antagonists,Giongo_2023,Giongo_2023_exp_001,time_in_social,direct,Control,11,264.47012,46.166135,MK-801,12,162.944915,99.491595,Low
+112,NMDA antagonists,Perdikaris_2022,Perdikaris_2022_exp_001,time_in_social,direct,Control,15,70.061245,20.69168464,MK-801,15,32.77804,13.43049927,Low
+113,NMDA antagonists,Perdikaris_2023_A,Perdikaris_2023_A_exp_001,time_in_social,direct,Control,25,275.341,96.8475,MK-801,26,138.075,40.15222916,Low
+114,NMDA antagonists,Perdikaris_2023_B,Perdikaris_2023_B_exp_001,time_in_social,direct,Control,5,95.035,5.314015549,MK-801,5,52.4945,6.448820047,Low
+115,NMDA antagonists,Seibt_2011,Seibt_2011_exp_001,time_in_social,direct,Control,11,8.606,1.842902059,MK-801,11,0.456,0.8157959304,Low
+116,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_social,direct,Control,8,53.286,14.99773483,MK-801,8,50.356,11.41553188,Low
+117,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_social,direct,Control,8,53.286,14.99773483,MK-801,8,38.6605,9.521899915,Low
+118,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_social,direct,Control,8,53.286,14.99773483,MK-801,8,29.6045,10.51326362,Low
+119,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_social,direct,Control,8,54.447,12.54266008,MK-801,8,42.209,18.76237133,Low
+120,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_social,direct,Control,8,54.447,12.54266008,MK-801,8,46.7695,11.64322026,Low
+121,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_social,direct,Control,8,54.447,12.54266008,MK-801,8,46.5025,10.11728383,Low
+122,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_social,direct,Control,8,43.0195,18.35649204,MK-801,8,40.447,24.73600942,Low
+123,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_social,direct,Control,8,43.0195,18.35649204,MK-801,8,50.468,22.81126476,Low
+124,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_social,direct,Control,8,43.0195,18.35649204,MK-801,8,43.3365,14.1605204,Low
+125,NMDA antagonists,Zimmermann_2016,Zimmermann_2016_exp_001,time_in_social,direct,Control,16,248.669,26.232,MK-801,16,192.7855,81.022,Low
+126,NMDA antagonists,Zimmermann_2016,Zimmermann_2016_exp_002,time_in_social,direct,Control,12,285.142,19.92204839,MK-801,12,188.4785,128.7745134,Low
+127,NMDA antagonists,Zimmermann_2016,Zimmermann_2016_exp_003,time_in_social,direct,Control,14,238.356,34.25487338,MK-801,14,154.7715,103.1275609,Low
+128,Valproic acid,Bailey_2016,Bailey_2016_exp_001,distance_to_social,indirect,Control,28,6.967,6.222539674,Valproic acid,28,7.961,5.382496818,Low
+129,Valproic acid,Bailey_2016,Bailey_2016_exp_001,distance_to_social,indirect,Control,28,6.967,6.222539674,Valproic acid,28,10.261,5.690795375,Low
+130,Valproic acid,Bailey_2016,Bailey_2016_exp_001,distance_to_social,indirect,Control,28,6.967,6.222539674,Valproic acid,28,8.9125,7.022984551,Low
+131,Valproic acid,Baronio_2018,Baronio_2018_exp_001,time_in_social,direct,Control,6,523.134825,49.44503252,Valproic acid,6,383.40291,99.63854338,Low
+132,Valproic acid,Chele_2024,Chele_2024_exp_001,time_in_social,direct,Control,10,54.9535,34.22691225,Valproic acid,10,61.433,20.48681582,Low
+133,Valproic acid,Flores_Prieto_2024,Flores_Prieto_2024_exp_001,time_in_social,direct,Control,8,2.4885,1.490581095,Valproic acid,8,1.6265,1.178039897,Low
+134,Valproic acid,Joseph_2021,Joseph_2021_exp_001,time_in_social,direct,Control,8,304.588,72.91067874,Valproic acid,8,122.9665,83.16961568,Low
+135,Valproic acid,Liu_2021,Liu_2021_exp_001,distance_in_social,direct,Control,12,0.933,0.09006664199,Valproic acid,14,0.966,0.0860581199,Low
+136,Valproic acid,Zimmermann_2015,Zimmermann_2015_exp_001,time_in_social,direct,Control,18,194,87.39839815,Valproic acid,18,136.2,58.12417741,Low
+137,Stress,Wilson_2024,Wilson_2024_exp_001,time_in_social_delta,direct,Control,9,34.503,9.2355,Alarm substance,8,33.5355,9.278655183,Low
+138,Stress,Wilson_2024,Wilson_2024_exp_002,time_in_social_delta,direct,Control,9,39.4015,6.6825,Alarm substance,9,44.6895,9.3525,Low
+139,Stress,Aldurrah_2023,Aldurrah_2023_exp_001,time_in_social,direct,Control,10,205.418,77.38251548,Chronic unpredictable stress,10,157.152,72.26436909,High
+140,Stress,Fulcher_2016,Fulcher_2016_exp_001,distance_to_social,indirect,Control,11,14.2592425,13.5843397,Chronic unpredictable stress,11,13.25369,13.60000789,High
+141,Stress,Rahim_2022,Rahim_2022_exp_001,time_in_social,direct,Control,10,314.875,71.22081746,Chronic unpredictable stress,10,207.2325,141.622605,High
+142,Stress,Reddy_2018,Reddy_2018_exp_001,time_in_social,direct,Control,12,48.513,28.32076275,Chronic unpredictable stress,12,11.916,11.86801213,High
+143,Stress,Reddy_2019,Reddy_2019_exp_001,time_in_social,direct,Control,15,50.592845,20.27349926,Chronic unpredictable stress,15,22.74096,25.34180146,High
+144,Stress,Reddy_2021,Reddy_2021_exp_001,time_in_social,direct,Control,30,35.263,32.30335604,Chronic unpredictable stress,30,4.925,4.464309717,High
+145,Stress,Sachett_2022,Sachett_2022_exp_001,time_in_social,direct,Control,17,245.4983,41.695915,Chronic unpredictable stress,17,212.762875,70.7949,High
+146,Stress,Liu_2024,Liu_2024_exp_001,time_in_social,direct,Control,8,33.45217,35.03296908,Cold water,8,63.37279,35.06729204,Low
+147,Stress,Barcellos_2020,Barcellos_2020_exp_001,time_in_social,direct,Control,10,30.8915,21.8792658,Net chasing,10,1.7225,2.871740239,High
+148,Stress,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_social,direct,Control,24,2.138745,4.12765966,Net chasing,24,5.26451,7.061462515,High
+149,Stress,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_social,direct,Control,24,1.12623,2.415588805,Net chasing,24,7.05941,6.433682789,High
+150,Stress,Cook_2023,Cook_2023_exp_001,time_in_social,direct,Control,20,73.546,26.53765476,Simulated predator,19,53.664,26.62415475,Low
+151,Stress,Cook_2023,Cook_2023_exp_001,time_in_social,direct,Control,20,73.546,26.53765476,Simulated predator,20,39.3965,36.35175711,Low
+152,Stress,Cook_2023,Cook_2023_exp_001,time_in_social,direct,Control,20,73.546,26.53765476,Simulated predator,19,36.507,37.35140505,Low
+153,Stress,Fulcher_2016,Fulcher_2016_exp_001,distance_to_social,indirect,Control,11,14.2592425,13.5843397,Social isolation,11,14.41373,10.59794522,High
+154,Stress,Marchetto_2021,Marchetto_2021_exp_001,time_in_social,direct,Control,12,34.291615,19.10083114,Social isolation,12,26.812015,20.67559441,High
+155,Stress,Müller_2024,Müller_2024_exp_001,time_in_social,direct,Control,12,96.443,13.00943362,Social isolation,12,34.889,28.70354598,High
+156,Stress,Shams_2017_B,Shams_2017_B_exp_001,distance_to_social,indirect,Control,12,15.029,9.460461511,Social isolation,10,8.0335,5.053319701,High
+157,Stress,Shams_2017_B,Shams_2017_B_exp_001,distance_to_social,indirect,Control,12,15.029,9.460461511,Social isolation,8,15.528,8.342445804,High
+158,Stress,Shams_2017_B,Shams_2017_B_exp_002,distance_to_social,indirect,Control,9,7.2385,4.131,Social isolation,10,9.9125,8.291492025,High
+159,Stress,Shams_2017_B,Shams_2017_B_exp_002,distance_to_social,indirect,Control,9,7.2385,4.131,Social isolation,9,10.5535,4.194,High

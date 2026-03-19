@@ -1,0 +1,136 @@
+effect_id,category,study_id,exp_id,outcome_pattern,effect_direction,test,name_ctrl,n_ctrl,mean_ctrl,sd_ctrl,name_int,n_int,mean_int,sd_int
+1,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,12,59.092,68.551,Amphetamine,12,47.108,55.481
+2,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,12,59.092,68.551,Amphetamine,12,37.208,33.443
+3,Pro-dopaminergic agents,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,12,59.092,68.551,Amphetamine,12,59.558,35.582
+4,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,2.9925,0.3290896534,GBR 12909,12,2.75,0.4763139721
+5,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,2.9925,0.3290896534,GBR 12909,12,2.2595,0.8435087433
+6,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,2.9925,0.3290896534,GBR 12909,12,2.9805,0.4832421753
+7,Pro-dopaminergic agents,Canzian_2024,Canzian_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,2.9925,0.3290896534,GBR 12909,12,2.9375,0.4260844987
+8,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_freezing,direct,Open tank,Control,10,446.7155,139.5623811,Methamphetamine,10,260.401,96.16802592
+9,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_freezing,direct,Open tank,Control,10,446.7155,139.5623811,Methamphetamine,10,448.475,169.1059602
+10,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_001,time_freezing,direct,Open tank,Control,10,446.7155,139.5623811,Methamphetamine,10,517.3575,167.3714509
+11,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_002,time_in_upper,indirect,Novel tank,Control,10,51.475,36.4357632,Methamphetamine,10,126.6115,46.70051649
+12,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_002,time_in_upper,indirect,Novel tank,Control,10,51.475,36.4357632,Methamphetamine,10,40.29825,46.68391453
+13,Pro-dopaminergic agents,Yin_2023,Yin_2023_exp_002,time_in_upper,indirect,Novel tank,Control,10,51.475,36.4357632,Methamphetamine,10,5.124,10.10189599
+14,Pro-dopaminergic agents,Freddo_2021,Freddo_2021_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.7925,39.6778199,Methylphenidate,12,68.042,2.956610729
+15,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.2905,22.34865157,Methylphenidate,12,141.352,110.6053005
+16,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.2905,22.34865157,Methylphenidate,12,70.731,84.46692173
+17,Pro-dopaminergic agents,Frizzo_2020,Frizzo_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.2905,22.34865157,Methylphenidate,12,101.2765,87.01303642
+18,Pro-dopaminergic agents,Nardi_2024,Nardi_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,55.95,203.3098558,Methylphenidate,12,79.66,155.7217599
+19,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.37152,83.45218245,Estradiol,12,107.18243,100.8480347
+20,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.37152,83.45218245,Estradiol,12,48.256055,95.98739787
+21,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.37152,83.45218245,Estradiol,12,0.96523,3.343672122
+22,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.37152,83.45218245,Estradiol,12,0,0
+23,Estradiol and alike,Fenske_2020,Fenske_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,50.37152,83.45218245,Estradiol,12,49.053875,76.18493027
+24,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_upper,indirect,Novel tank,Control,12,9.3206,20.96586881,Estradiol,12,11.193315,32.93007904
+25,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_upper,indirect,Novel tank,Control,12,9.3206,20.96586881,Estradiol,12,13.764055,32.06516215
+26,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_upper,indirect,Novel tank,Control,12,9.3206,20.96586881,Estradiol,12,12.53934,33.84061815
+27,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_upper,indirect,Novel tank,Control,12,9.3206,20.96586881,Estradiol,12,0,0
+28,Estradiol and alike,Fenske_2020,Fenske_2020_exp_002,time_in_upper,indirect,Novel tank,Control,12,9.3206,20.96586881,Estradiol,12,96.325675,98.88664308
+29,Estradiol and alike,Moraes_2021,Moraes_2021_exp_001,time_in_upper,indirect,Novel tank,Control,12,29.80708,36.46801798,Estradiol,12,70.52092,59.40217201
+30,Estradiol and alike,Reyhanian_2011,Reyhanian_2011_exp_001,time_in_upper,indirect,Novel tank,Control,30,32.3845,35.07615258,Estradiol,30,7.538,8.432188773
+31,Estradiol and alike,Reyhanian_2011,Reyhanian_2011_exp_001,time_in_upper,indirect,Novel tank,Control,30,32.3845,35.07615258,Estradiol,28,120.6335,63.04560799
+32,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Estradiol,24,5.668095,6.440737319
+33,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Estradiol,24,10.117475,2.475209385
+34,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Estradiol,24,0.98189,3.345292637
+35,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Estradiol,24,1.47403,2.261050497
+36,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Estradiol,24,1.01239,1.719198871
+37,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Estradiol,24,89.906975,82.63008269
+38,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Estradiol,24,74.067225,183.5888888
+39,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Estradiol,24,116.788565,159.2093133
+40,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Estradiol,24,149.344075,47.74177983
+41,Estradiol and alike,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Estradiol,24,115.82398,92.07859746
+42,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_upper,indirect,Novel tank,Control,24,85.0155,52.58809529,Estradiol,24,97.8225,82.64823341
+43,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_upper,indirect,Novel tank,Control,24,85.0155,52.58809529,Estradiol,24,119.6175,79.74068909
+44,Estradiol and alike,Tamagno_2022_B,Tamagno_2022_B_exp_001,time_in_upper,indirect,Novel tank,Control,24,85.0155,52.58809529,Estradiol,24,164.291,64.7400139
+45,Estradiol and alike,Wang_2015,Wang_2015_exp_001,time_in_upper,indirect,Novel tank,Control,10,20.32,120.9903244,Estradiol,10,149.4045,292.7241373
+46,Ethanol,Ariyasiri_2021,Ariyasiri_2021_exp_001,time_in_upper,indirect,Novel tank,Control,10,14.8455,18.65743819,Ethanol,10,3.308,6.346691264
+47,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_upper,indirect,Novel tank,Control,8,97.848,19.35492681,Ethanol,8,10.5485,5.888785274
+48,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_upper,indirect,Novel tank,Control,8,97.848,19.35492681,Ethanol,8,29.054,30.22315804
+49,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_upper,indirect,Novel tank,Control,8,97.848,19.35492681,Ethanol,8,76.0085,68.4352085
+50,Ethanol,Baggio_2018,Baggio_2018_exp_001,time_in_upper,indirect,Novel tank,Control,8,97.848,19.35492681,Ethanol,8,24.518,23.03329629
+51,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_upper,indirect,Novel tank,Control,13,7.949,6.071748348,Ethanol,15,19.1135,20.75144477
+52,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_upper,indirect,Novel tank,Control,13,7.949,6.071748348,Ethanol,13,42.1965,30.24877243
+53,Ethanol,Gerlai_2000,Gerlai_2000_exp_001,time_in_upper,indirect,Novel tank,Control,13,7.949,6.071748348,Ethanol,16,20.644,31.962
+54,Ethanol,Gerlai_2000,Gerlai_2000_exp_002,time_in_dark,direct,Light/dark,Control,15,5.5635,16.8956962,Ethanol,16,2.2925,4.402
+55,Ethanol,Gerlai_2000,Gerlai_2000_exp_002,time_in_dark,direct,Light/dark,Control,15,5.5635,16.8956962,Ethanol,15,8.29925,19.13331233
+56,Ethanol,Gerlai_2000,Gerlai_2000_exp_002,time_in_dark,direct,Light/dark,Control,15,5.5635,16.8956962,Ethanol,20,5.25585,12.47837735
+57,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,height_in_tank,indirect,Novel tank,Control,10,19413.853,13217.70714,Ethanol,15,14319.9225,14026.82058
+58,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,height_in_tank,indirect,Novel tank,Control,10,19413.853,13217.70714,Ethanol,11,5390.742,7837.287195
+59,Ethanol,Gerlai_2008,Gerlai_2008_exp_001,height_in_tank,indirect,Novel tank,Control,10,19413.853,13217.70714,Ethanol,15,11101.9825,17200.27342
+60,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,height_in_tank,indirect,Novel tank,Control,9,21896.28,13600.146,Ethanol,12,41475.6455,23950.4868
+61,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,height_in_tank,indirect,Novel tank,Control,9,21896.28,13600.146,Ethanol,14,25992.73,22372.19081
+62,Ethanol,Gerlai_2008,Gerlai_2008_exp_002,height_in_tank,indirect,Novel tank,Control,9,21896.28,13600.146,Ethanol,15,9005.937,15701.23328
+63,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,height_in_tank,indirect,Novel tank,Control,11,23528.408,24260.91134,Ethanol,15,33959.3755,18597.02226
+64,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,height_in_tank,indirect,Novel tank,Control,11,23528.408,24260.91134,Ethanol,14,25438.8005,19075.06103
+65,Ethanol,Gerlai_2008,Gerlai_2008_exp_003,height_in_tank,indirect,Novel tank,Control,11,23528.408,24260.91134,Ethanol,13,13046.294,18196.77921
+66,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,height_in_tank,indirect,Novel tank,Control,12,23495.412,9910.320139,Ethanol,15,30014.6325,24509.9253
+67,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,height_in_tank,indirect,Novel tank,Control,12,23495.412,9910.320139,Ethanol,10,26891.555,22808.67392
+68,Ethanol,Gerlai_2008,Gerlai_2008_exp_004,height_in_tank,indirect,Novel tank,Control,12,23495.412,9910.320139,Ethanol,11,15567.4605,22110.62575
+69,Ethanol,Lutte_2020,Lutte_2020_exp_001,time_in_upper,indirect,Novel tank,Control,10,104.202,12.2975,Ethanol,10,187.756,11.4145
+70,Ethanol,Lutte_2020,Lutte_2020_exp_001,time_in_upper,indirect,Novel tank,Control,10,104.202,12.2975,Ethanol,10,201.669,15.996
+71,Ethanol,Lutte_2020,Lutte_2020_exp_002,time_in_upper,indirect,Novel tank,Control,10,162.322,24.795,Ethanol,10,135.5355,32.355
+72,Ethanol,Lutte_2020,Lutte_2020_exp_002,time_in_upper,indirect,Novel tank,Control,10,162.322,24.795,Ethanol,10,117.82,32.504
+73,Ethanol,Stefanello_2021,Stefanello_2021_exp_001,time_in_upper,indirect,Novel tank,Control,8,118.3275,91.31828867,Ethanol,8,18.296,13.87675812
+74,NMDA antagonists,Riehl_2011,Riehl_2011_exp_001,time_in_upper,indirect,Novel tank,Control,12,105.478,64.88608735,Ketamine,12,283.129,132.5278675
+75,NMDA antagonists,Riehl_2011,Riehl_2011_exp_001,time_in_upper,indirect,Novel tank,Control,12,105.478,64.88608735,Ketamine,12,210.774,164.8410074
+76,NMDA antagonists,Riehl_2011,Riehl_2011_exp_002,time_in_light,indirect,Light/dark,Control,12,9.9755,11.56663529,Ketamine,12,75.623,61.09809224
+77,NMDA antagonists,Riehl_2011,Riehl_2011_exp_002,time_in_light,indirect,Light/dark,Control,12,9.9755,11.56663529,Ketamine,12,124.611,124.0529429
+78,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,11,68.818,74.411,MK-801,11,115.618,217.24
+79,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,11,68.818,74.411,MK-801,11,122.773,192.343
+80,NMDA antagonists,Benvenutti_2021,Benvenutti_2021_exp_001,time_in_center,indirect,Open tank,Control,11,68.818,74.411,MK-801,11,82.209,69.642
+81,NMDA antagonists,Mccutcheon_2016,Mccutcheon_2016_exp_001,latency_to_upper,direct,Novel tank,Control,6,63.5085,41.52742435,MK-801,6,64.1375,49.5531775
+82,NMDA antagonists,Perdikaris_2022,Perdikaris_2022_exp_001,time_in_center,indirect,Open tank,Control,15,18.4833,11.61633577,MK-801,15,3.10795,3.082333161
+83,NMDA antagonists,Perdikaris_2022,Perdikaris_2022_exp_002,time_in_upper,indirect,Novel tank,Control,15,28.48788,22.43390746,MK-801,15,32.860105,28.03474487
+84,NMDA antagonists,Perdikaris_2023_A,Perdikaris_2023_A_exp_001,time_in_periphery,direct,Open tank,Control,20,85.127345,11.23597326,MK-801,20,96.16012,5.31900198
+85,NMDA antagonists,Perdikaris_2023_A,Perdikaris_2023_A_exp_002,time_in_light,indirect,Light/dark,Control,8,0.5545,0.4058792924,MK-801,8,-0.0815,0.3988082246
+86,NMDA antagonists,Perdikaris_2023_B,Perdikaris_2023_B_exp_001,time_in_periphery,direct,Open tank,Control,5,72.427,15.39644606,MK-801,5,97.213,5.062457901
+87,NMDA antagonists,Perdikaris_2023_B,Perdikaris_2023_B_exp_002,time_freezing,direct,Novel tank,Control,5,5.007,7.998415156,MK-801,5,202.004,132.9387134
+88,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_bottom,direct,Novel tank,Control,8,34.75415,30.08866633,MK-801,8,55.5896,21.84846817
+89,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_bottom,direct,Novel tank,Control,8,34.75415,30.08866633,MK-801,8,64.92665,29.90722273
+90,NMDA antagonists,Sison_2011,Sison_2011_exp_001,time_in_bottom,direct,Novel tank,Control,8,34.75415,30.08866633,MK-801,8,52.78195,46.77610352
+91,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_bottom,direct,Novel tank,Control,8,41.83245,33.1007998,MK-801,8,48.55,24.31740221
+92,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_bottom,direct,Novel tank,Control,8,41.83245,33.1007998,MK-801,8,44.212,19.75514925
+93,NMDA antagonists,Sison_2011,Sison_2011_exp_002,time_in_bottom,direct,Novel tank,Control,8,41.83245,33.1007998,MK-801,8,57.967,16.6834774
+94,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_bottom,direct,Novel tank,Control,8,43.875,25.38371923,MK-801,8,68.8485,13.29926434
+95,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_bottom,direct,Novel tank,Control,8,43.875,25.38371923,MK-801,8,65.799,34.20134079
+96,NMDA antagonists,Sison_2011,Sison_2011_exp_003,time_in_bottom,direct,Novel tank,Control,8,43.875,25.38371923,MK-801,8,80.214,15.87878988
+97,NMDA antagonists,Sison_2011,Sison_2011_exp_004,time_in_light,indirect,Light/dark,Control,8,33.7605,13.13521557,MK-801,8,32.8695,6.554879862
+98,NMDA antagonists,Sison_2011,Sison_2011_exp_004,time_in_light,indirect,Light/dark,Control,8,33.7605,13.13521557,MK-801,8,34.973,25.15885927
+99,NMDA antagonists,Sison_2011,Sison_2011_exp_004,time_in_light,indirect,Light/dark,Control,8,33.7605,13.13521557,MK-801,8,37.54,14.82237235
+100,NMDA antagonists,Sison_2011,Sison_2011_exp_005,time_in_light,indirect,Light/dark,Control,8,39.483,13.68817307,MK-801,8,32.139,14.74741903
+101,NMDA antagonists,Sison_2011,Sison_2011_exp_005,time_in_light,indirect,Light/dark,Control,8,39.483,13.68817307,MK-801,8,34.982,12.8566155
+102,NMDA antagonists,Sison_2011,Sison_2011_exp_005,time_in_light,indirect,Light/dark,Control,8,39.483,13.68817307,MK-801,8,47.5755,22.23426563
+103,NMDA antagonists,Sison_2011,Sison_2011_exp_006,time_in_light,indirect,Light/dark,Control,8,27.4595,15.35270243,MK-801,8,27.531,11.54563952
+104,NMDA antagonists,Sison_2011,Sison_2011_exp_006,time_in_light,indirect,Light/dark,Control,8,27.4595,15.35270243,MK-801,8,29.3845,18.85712364
+105,NMDA antagonists,Sison_2011,Sison_2011_exp_006,time_in_light,indirect,Light/dark,Control,8,27.4595,15.35270243,MK-801,8,47.727,24.88167342
+106,NMDA antagonists,Kyzar_2012,Kyzar_2012_exp_001,time_in_upper,indirect,Novel tank,Control,13,49.623,67.8348417,Phencyclidine,13,106.148,137.2326899
+107,Stress,Aldurrah_2023,Aldurrah_2023_exp_001,time_freezing,direct,Open tank,Control,10,107.177,63.43054645,Chronic unpredictable stress,10,243.601,85.53486729
+108,Stress,Chakravarty_2013,Chakravarty_2013_exp_001,latency_to_upper,direct,Novel tank,Control,30,47.85215,35.99314969,Chronic unpredictable stress,30,87.659655,25.53860492
+109,Stress,Chakravarty_2013,Chakravarty_2013_exp_002,latency_to_dark,indirect,Light/dark,Control,30,27.3525,40.82176221,Chronic unpredictable stress,30,11.499,16.14959961
+110,Stress,Fontana_2020,Fontana_2020_exp_001,time_in_bottom,direct,Novel tank,Control,11,26.5425,7.18454675,Chronic unpredictable stress,11,26.963,7.409713355
+111,Stress,Fontana_2021,Fontana_2021_exp_001,time_in_upper,indirect,Novel tank,Control,16,47.864,47.87956408,Chronic unpredictable stress,16,77.4545,65.13476112
+112,Stress,Fontana_2021,Fontana_2021_exp_001,time_in_upper,indirect,Novel tank,Control,16,47.864,47.87956408,Chronic unpredictable stress,16,108.283,82.75072991
+113,Stress,Fontana_2021,Fontana_2021_exp_001,time_in_upper,indirect,Novel tank,Control,16,47.864,47.87956408,Chronic unpredictable stress,16,126.4685,107.054376
+114,Stress,Fontana_2021,Fontana_2021_exp_001,time_in_upper,indirect,Novel tank,Control,16,47.864,47.87956408,Chronic unpredictable stress,16,23.5215,25.02312804
+115,Stress,Fontana_2021,Fontana_2021_exp_002,time_in_dark,direct,Light/dark,Control,15,217.2065,102.678,Chronic unpredictable stress,15,204.587,71.8
+116,Stress,Fontana_2021,Fontana_2021_exp_002,time_in_dark,direct,Light/dark,Control,15,217.2065,102.678,Chronic unpredictable stress,15,174.73,110.622
+117,Stress,Fontana_2021,Fontana_2021_exp_002,time_in_dark,direct,Light/dark,Control,15,217.2065,102.678,Chronic unpredictable stress,15,129.4055,87.052
+118,Stress,Fontana_2021,Fontana_2021_exp_002,time_in_dark,direct,Light/dark,Control,15,217.2065,102.678,Chronic unpredictable stress,15,263.0275,77.382
+119,Stress,Rahim_2022,Rahim_2022_exp_001,time_in_dark,direct,Light/dark,Control,10,240.3095,129.8541887,Chronic unpredictable stress,10,329.857,76.93347206
+120,Stress,Rahim_2022,Rahim_2022_exp_002,time_freezing,direct,Open tank,Control,10,22.8675,27.709458,Chronic unpredictable stress,10,59.1855,66.98810881
+121,Stress,Reddy_2018,Reddy_2018_exp_001,time_in_upper,indirect,Novel tank,Control,12,65.2618,44.79551042,Chronic unpredictable stress,12,9.2418,16.54004598
+122,Stress,Reddy_2019,Reddy_2019_exp_001,time_in_upper,indirect,Novel tank,Control,15,39.94474,26.56121026,Chronic unpredictable stress,15,14.208245,17.31409459
+123,Stress,Sachett_2022,Sachett_2022_exp_001,time_in_upper,indirect,Novel tank,Control,18,22.715615,22.71047,Chronic unpredictable stress,17,11.52713,14.481
+124,Stress,Sachett_2022,Sachett_2022_exp_002,time_in_center,indirect,Open tank,Control,17,40.274085,49.35375,Chronic unpredictable stress,17,47.4796,26.98613
+125,Stress,Wang_2024,Wang_2024_exp_001,time_in_upper,indirect,Novel tank,Control,18,137.0435,63.23823847,Chronic unpredictable stress,18,42.7535,35.4237889
+126,Stress,Wang_2024,Wang_2024_exp_002,time_in_light,indirect,Light/dark,Control,18,169.311,69.42543857,Chronic unpredictable stress,18,72.498,46.05629213
+127,Stress,Liu_2024,Liu_2024_exp_001,time_in_upper,indirect,Novel tank,Control,5,13.381,4.493971159,Cold water,4,5.931795,4.32809
+128,Stress,Barcellos_2020,Barcellos_2020_exp_001,time_in_upper,indirect,Novel tank,Control,12,46.0605,58.76328775,Net chasing,12,77.472,65.08700525
+129,Stress,Tamagno_2022_A,Tamagno_2022_A_exp_001,time_in_upper,indirect,Novel tank,Control,24,1.147605,2.879375193,Net chasing,24,1.049495,2.094485194
+130,Stress,Tamagno_2022_A,Tamagno_2022_A_exp_002,time_in_upper,indirect,Novel tank,Control,24,6.882545,6.535630552,Net chasing,24,23.77484,29.11688861
+131,Stress,Marchetto_2021,Marchetto_2021_exp_001,time_in_upper,indirect,Novel tank,Control,12,118.5988,138.3828921,Social isolation,12,122.3666,119.7449169
+132,Stress,Müller_2024,Müller_2024_exp_001,time_in_upper,indirect,Novel tank,Control,12,45.929,32.8119705,Social isolation,12,107.552,67.49282382
+133,Stress,Müller_2024,Müller_2024_exp_002,time_in_light,indirect,Light/dark,Control,12,183.0155,50.36976953,Social isolation,11,230.906,71.68386991
+134,Stress,Shams_2017_A,Shams_2017_A_exp_001,time_in_periphery,direct,Open tank,Control,10,88.04649,10.84414036,Social isolation,10,90.49122,8.473564709
+135,Stress,Shams_2017_A,Shams_2017_A_exp_001,time_in_periphery,direct,Open tank,Control,10,88.04649,10.84414036,Social isolation,10,85.344905,14.26869032
