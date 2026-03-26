@@ -41,7 +41,7 @@ Each subfolder contains:
 
 .Rmd and .html reproducible analysis files
 
-figures/ with graphical outputs
+figs_png/ with graphical outputs
 
 tables/ with CSV summary results
 
@@ -59,7 +59,7 @@ Each subfolder contains:
 
 .Rmd and .html reproducible analysis files
 
-figures/ with graphical outputs
+figs_png/ with graphical outputs
 
 tables/ with CSV summary results
 
@@ -77,7 +77,7 @@ Each subfolder contains:
 
 .Rmd and .html reproducible analysis files
 
-figures/ with graphical outputs
+figs_png/ with graphical outputs
 
 tables/ with CSV summary results
 
