@@ -1,5 +1,8 @@
 # Modulation of social behavior in adult zebrafish (*Danio rerio*): a systematic review and meta-analysis
 
+[![DOI](https://zenodo.org/badge/1186295576.svg)](https://doi.org/10.5281/zenodo.19369352)
+[![OSF](https://img.shields.io/badge/OSF-h4v3k-blue)](https://osf.io/h4v3k/)
+
 This repository contains the data, analysis code, and outputs from a systematic review and meta-analysis investigating the modulation of social behavior in adult zebrafish, with anxiety-related behavior assessed as a secondary outcome.
 
 The project synthesises evidence from zebrafish studies evaluating the effects of pharmacological interventions that modulate the central nervous system and stress-related interventions, applying correlated multilevel random-effects meta-analytic models with robust variance estimation. Interventions were categorized according to their nature, mechanism of action, and/or therapeutic purpose for each outcome.
