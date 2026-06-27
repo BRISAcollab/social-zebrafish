@@ -339,20 +339,20 @@ ci_SEeff <- confint(egger_SEeff)
       data = es_loso
     )
 
-    ci_l <- confint(m_loso)
+m_loso_r <- metafor::robust(m_loso, cluster = es_loso$study_id)
 
     tibble(
-      category = cat,
-      left_out = as.character(st),
-      estimate = as.numeric(coef(m_loso)),
-      ci_lb = m_loso$ci.lb,
-      ci_ub = m_loso$ci.ub,
-      p_value = summary(m_loso)$pval,
-      sigma2_between = m_loso$sigma2[1],
-      sigma2_within  = m_loso$sigma2[2],
-      k = m_loso$k,
-      n_studies = n_distinct(es_loso$study_id)
-    )
+  category = cat,
+  left_out = as.character(st),
+  estimate = as.numeric(coef(m_loso_r)),
+  ci_lb = m_loso_r$ci.lb,
+  ci_ub = m_loso_r$ci.ub,
+  p_value = summary(m_loso_r)$pval,
+  sigma2_between = m_loso_r$sigma2[1],
+  sigma2_within  = m_loso_r$sigma2[2],
+  k = m_loso_r$k,
+  n_studies = n_distinct(es_loso$study_id)
+)
   })
 
   write_csv(
@@ -374,18 +374,20 @@ ci_SEeff <- confint(egger_SEeff)
     method = "REML",
     data = es_low
   )
+  
+  m_low_r <- metafor::robust(m_low, cluster = es_low$study_id)
 
   rob_tbl <- tibble(
-   category = cat,
-    estimate = as.numeric(coef(m_low)),
-    ci_lb = m_low$ci.lb,
-    ci_ub = m_low$ci.ub,
-    p_value = summary(m_low)$pval,
-    sigma2_between = m_low$sigma2[1],
-    sigma2_within  = m_low$sigma2[2],
-    k = m_low$k,
-    n_studies = n_distinct(es_low$study_id)
-  )
+  category = cat,
+  estimate = as.numeric(coef(m_low_r)),
+  ci_lb = m_low_r$ci.lb,
+  ci_ub = m_low_r$ci.ub,
+  p_value = summary(m_low_r)$pval,
+  sigma2_between = m_low_r$sigma2[1],
+  sigma2_within  = m_low_r$sigma2[2],
+  k = m_low_r$k,
+  n_studies = n_distinct(es_low$study_id)
+)
 
   write_csv(
     rob_tbl,
@@ -401,25 +403,27 @@ ci_SEeff <- confint(egger_SEeff)
     Vr <- make_V(es, r)
 
     mr <- rma.mv(
-      yi = yi,
-      V  = Vr,
-      random = ~ 1 | study_id/exp_id,
-      method = "REML",
-      data = es
-    )
+  yi = yi,
+  V  = Vr,
+  random = ~ 1 | study_id/exp_id,
+  method = "REML",
+  data = es
+)
 
-    tibble(
-       category = cat,
-      rho = r,
-      estimate = as.numeric(coef(mr)),
-      ci_lb = mr$ci.lb,
-      ci_ub = mr$ci.ub,
-      p_value = summary(mr)$pval,
-      sigma2_between = mr$sigma2[1],
-      sigma2_within  = mr$sigma2[2],
-      k = mr$k,
-      n_studies = n_distinct(es$study_id)
-    )
+mr_r <- robust(mr, cluster = es$study_id)
+
+tibble(
+  category = cat,
+  rho = r,
+  estimate = as.numeric(coef(mr_r)),
+  ci_lb = mr_r$ci.lb,
+  ci_ub = mr_r$ci.ub,
+  p_value = summary(mr_r)$pval,
+  sigma2_between = mr_r$sigma2[1],
+  sigma2_within  = mr_r$sigma2[2],
+  k = mr_r$k,
+  n_studies = n_distinct(es$study_id)
+)
   })
 
   rho_sensitivity[[cat]] <- rho_cat
